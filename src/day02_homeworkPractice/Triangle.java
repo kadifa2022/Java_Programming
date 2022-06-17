@@ -7,7 +7,7 @@ public class Triangle {
         System.out.println("\t\t\t   /     \\");
         System.out.println("\t\t\t  /       \\");
         System.out.println("\t\t\t /         \\");
-        System.out.println("\t\t\t------------");
+        System.out.println("\t\t\t ------------");
 
 
 

@@ -1,6 +1,7 @@
 package day09_scanner;
 
 import java.util.Scanner;
+
 public class ScannerIntro3 {
 
     public static void main(String[] args) {

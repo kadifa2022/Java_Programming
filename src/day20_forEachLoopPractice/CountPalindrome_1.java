@@ -4,7 +4,7 @@ public class CountPalindrome_1 {
 
     public static void main(String[] args) {
 
-        String [] pal = {  "java" , "level" , " anna"};
+        String [] pal = { "java" , "level" , " anna"};
         int count = 0;
 
         for (int i = 0 - 1 ; i < pal.length; i++){

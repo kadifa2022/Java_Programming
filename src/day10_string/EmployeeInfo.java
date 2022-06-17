@@ -15,7 +15,7 @@ public class EmployeeInfo {
         System.out.println("Enter your gender:");
         char gender = input.next().charAt(0);
 
-        input.nextLine();
+        input.nextLine();//clean scanner before nextLine
 
         System.out.println("Enter your company name:");
         String companyName = input.nextLine();
