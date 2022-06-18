@@ -1,6 +1,6 @@
 package day25_constracter;
 
-/*public class TestEmployeeObjects {//use new keyword for constructor to provide information-six arguments age, gender ..
+/*public class TestEmployeeObjects {//use new keyword for constructor to provide information-six arguments age, gender
     public static void main(String[] args) {*/
 
 import java.time.LocalDate;

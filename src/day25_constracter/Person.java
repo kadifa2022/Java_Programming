@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Person {
+
     public String name;
     public int age;
     public char gender;
