@@ -1,4 +1,4 @@
-package day24_;
+package day24_dateAndTime;
 
 import day17_customClass.Employee;
 
@@ -10,13 +10,15 @@ public class RemoveElements {
     public static void main(String[] args) {
 
         ArrayList<Integer> list = new ArrayList<>(); // 0~9
-        list.addAll(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7));
+        list.addAll(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7));//to add all elements
 
         System.out.println(list);
 
         for (int i = 0; i < list.size(); i++) {//do not use this methode for remove elements
-            if(list.get(i) < 4){
-                list.remove(i);
+            if(list.get(i) < 4){//condition
+                list.remove(i);//to remove index//shifts elements because the size is dynamic
+
+                             // remove all methods can be use if the elements is known but not for un-known
 
             }
         }
@@ -29,18 +31,19 @@ public class RemoveElements {
         list2.addAll(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7));//Intigen
 
         System.out.println(list2);
-
-        list2.removeIf( p -> p < 4);//use this methode for removing elements
-
+         //remove if -iterable is must to hava  for remove--after java 8-iterable is implicit added
+        list2.removeIf( p -> p < 4); //landa expression//use this methode for removing elements
+                                    //if the number of element is un-know we need to use remove if
         System.out.println(list2);
 
 
         System.out.println("-------------------------------------------------------------");
 
-        ArrayList<String> names = new ArrayList<>();
-        names.addAll( Arrays.asList("Java", "Python", "C#", "Java", "Ruby", "JavaScript", "C++", "C") ); //STRING
+        ArrayList<String> names = new ArrayList<>();//String
 
-        names.removeIf( p -> p.startsWith("J") );
+        names.addAll( Arrays.asList("Java", "Python", "C#", "Java", "Ruby", "JavaScript", "C++", "C") ); //STRING - only takes collection type
+                        //each -> each.startsWith can be but is performed p
+        names.removeIf( p -> p.startsWith("J") );//iterable landa expression condition
 
         System.out.println(names);
 

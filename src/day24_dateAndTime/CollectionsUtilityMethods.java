@@ -1,4 +1,4 @@
-package day24_;
+package day24_dateAndTime;
 
 
    import java.util.ArrayList;
@@ -9,21 +9,21 @@ package day24_;
 
         public static void main(String[] args) {
 
-            ArrayList<String> names = new ArrayList<>();
+            ArrayList<String> names = new ArrayList<>();//String list
             names.addAll(Arrays.asList("Java", "Java", "Java", "C#", "C#", "Ruby", "Swift", "Swift", "Java"));
 
             System.out.println(names);
 
 
         /*
-        for (int i = 0; i < names.size(); i++) {
+        for (int i = 0; i < names.size(); i++) { //use loop instead of= equals use ignore case sensitivity
             if(names.get(i).equals("Java")){
                 names.set(i, "Python");
             }
         }
         */
 
-            Collections.replaceAll(names, "Java", "Python");
+            Collections.replaceAll(names, "Java", "Python");//can't ignore cases sensitivity
 
             System.out.println(names);
 
@@ -33,7 +33,8 @@ package day24_;
             ArrayList<Integer> list = new ArrayList<>();
             list.addAll(Arrays.asList(10, 20, 20, 30, 40, 40, 50, 50, 50, 50, 50, 60, 60, 50, 50, 50));
 
-            int count = Collections.frequency(list, 50);
+            int count = Collections.frequency(list, 50);//to find how many 50's call frequency
+            //frequency return is always integer
 
 
             System.out.println(count);
@@ -43,7 +44,7 @@ package day24_;
             ArrayList<String> words = new ArrayList<>();
             words.addAll(Arrays.asList("Java", "Java", "Java", "C#", "C#", "Ruby", "Swift", "Swift", "Java"));
 
-            int countJava = Collections.frequency(words, "Java");
+            int countJava = Collections.frequency(words, "Java");//integer always return one element, if you need to find for all list use loop
 
             System.out.println(countJava);
 
@@ -52,8 +53,8 @@ package day24_;
             ArrayList<Integer> numbers = new ArrayList<>();
             numbers.addAll(Arrays.asList(10, 20, 20, 30, 40, 40, 50, 50, 50, 50, 50, 60, 60, 50, 50, 50));
 
-            for (Integer each : numbers) {
-                if (Collections.frequency(numbers, each) == 1) {
+            for (Integer each : numbers) {//loop
+                if (Collections.frequency(numbers, each) == 1) {//for unique of each element call loop
                     System.out.println(each);
                 }
             }

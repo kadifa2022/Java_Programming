@@ -56,8 +56,8 @@ public class StringMethod1 {
         String name1 = "Umran";
         String name2 = new String("Umran");
 
-        System.out.println(name1 == name2);
-        System.out.println(name1.equals(name2));
+        System.out.println(name1 == name2);//false
+        System.out.println(name1.equals(name2));//use  methode equals than become true
 
         System.out.println("---------------------------------------------------");
 

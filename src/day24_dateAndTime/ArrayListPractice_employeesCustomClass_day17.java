@@ -1,16 +1,17 @@
-package day24_;
+package day24_dateAndTime;
 import day17_customClass.Employee;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 
-public class Practice_employees {
+public class ArrayListPractice_employeesCustomClass_day17 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//1.employee class from day 17 -import class
 
-        ArrayList<Employee> employees = new ArrayList<>();
-        employees.addAll(Arrays.asList(
+        ArrayList<Employee> employees = new ArrayList<>();//array list itself is from differet package java.util pakage solution-iport class
+        employees.addAll(Arrays.asList(//allows us to add multiple elements objects-accept only collection type-in order to pass as collection type form Array.util.class-import from java.util.package
+                                        // then add elements to addAllMethode -import LIST-to get employee objects = set.info methode//instance methode//set information separately
 
                 new Employee(), new Employee(), new Employee(), new Employee(), new Employee()));
         employees.get(0).setInfo("Josh", 34, 'M', "Java Developer", 100000, "A01");
@@ -18,14 +19,15 @@ public class Practice_employees {
         employees.get(2).setInfo("Conor", 38, 'M', "Project Manager", 130000, "A03");
         employees.get(3).setInfo("Bella", 29, 'F', "Java Developer", 95000, "A04");
         employees.get(4).setInfo("Jimmy", 54, 'M', "Data Analyst", 105000, "A05");
-
+                    //variable is employee each
         for (Employee each: employees){//use for each loop in access to all name -for the variable is employee
-            System.out.println(each.name +" :" +each.jobTitle );
+            System.out.println(each.name +" :" +each.jobTitle );//requirement is each object + job title-if select only name they will print everything
 
         }
         System.out.println("-------------------------------------------------------");
 
-        for (Employee each : employees) {
+        for (Employee each : employees) {//display only(java developer)
+                                                     //another loop if condition use equals methode to compare
             if(each.jobTitle.equals("Java Developer")){ // if the job title of the employee is Java Developer
                 System.out.println(each.name);  // prints the name of the employee
             }
@@ -34,16 +36,16 @@ public class Practice_employees {
 
         System.out.println("-------------------------------------------------------");
 
-        double max = employees.get(0).salary;
+        double max = employees.get(0).salary;//assign use get methode-call salary -double-loop
         double min =  employees.get(0).salary;
 
-        for (Employee each : employees) {
+        for (Employee each : employees) {//for each loop
 
-            if(each.salary > max){
+            if(each.salary > max){//to get maximum salary
                 max = each.salary;
             }
 
-            if(each.salary < min){
+            if(each.salary < min){//to get minimum salary
                 min = each.salary;
             }
         }
@@ -56,7 +58,7 @@ public class Practice_employees {
         ArrayList<Employee> femaleEmployees = new ArrayList<>();//for female
         ArrayList<Employee> maleEmployees = new ArrayList<>();//for male employee
 
-        for (Employee employee : employees) {
+        for (Employee employee : employees) {//equal operator for compare genders
             if(employee.gender == 'M'){  // if the employee is male
                 maleEmployees.add(employee);
             }else{

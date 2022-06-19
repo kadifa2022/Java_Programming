@@ -1,7 +1,7 @@
 package day17_customClass;
 
 public class Employee {
-    public String name;
+    public String name;//instance variable
     public int age;
     public char gender;
     public String jobTitle;
