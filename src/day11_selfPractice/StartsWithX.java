@@ -14,8 +14,8 @@ public class StartsWithX {
 
 }
 /*
-eate a class named StartsWithX and write a program that asks user to
-enter a word. If the work starts with x, replace Input:
+Create a class named StartsWithX and write a program that asks user to
+enter a word. If the word starts with x, replace Input:
 xcodex Output:
 acodex
 
