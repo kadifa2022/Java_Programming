@@ -1,7 +1,7 @@
 package day23_selfPractice;
 import java.util.ArrayList;
 import java.util.Arrays;
-public class LastElement {
+public class LastElementToZero {
 
 
     public static void main(String[] args) {
