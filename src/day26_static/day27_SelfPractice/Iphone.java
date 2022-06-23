@@ -1,4 +1,4 @@
-package day27_SelfPractice;
+package day26_static.day27_SelfPractice;
 
 
 
