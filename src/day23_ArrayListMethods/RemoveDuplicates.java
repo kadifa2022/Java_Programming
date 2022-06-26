@@ -14,25 +14,25 @@ public class RemoveDuplicates {
         names.add("Ali");
         names.add("Sumeye");
 
-        // [Vasyl, Vasyl, Sumeye, Sumeye, Ali, Sumeye]
+        // [Vasyl, Vasyl, Sumeye, Sumeye, Ali, Sumeye] unreferenced and ready for garbage collection
 
         System.out.println(names);
 
-        ArrayList<String> nonDup = new ArrayList<>();
+        ArrayList<String> nonDup = new ArrayList<>();//adding new Arraylist contains methode
 
-        for (String each : names) {
+        for (String each : names) {//each elements
 
-            if(nonDup.contains(each)){
+            if(nonDup.contains(each)){//condition to skip same name - continue
                 continue;
             }
 
-            nonDup.add(each);
+            nonDup.add(each);//
 
         }
 
         // [Vasyl, Sumeye, Ali]
 
-        names = nonDup;
+        names = nonDup;//referenced to new objects
 
         System.out.println(names);
         System.out.println(nonDup);

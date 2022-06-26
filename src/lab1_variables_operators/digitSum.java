@@ -1,4 +1,4 @@
-package lab1;
+package lab1_variables_operators;
 
 public class digitSum {
 

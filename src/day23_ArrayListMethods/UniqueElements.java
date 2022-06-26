@@ -18,10 +18,10 @@ public class UniqueElements {
         names.add("Marika");
 
 
-        for (String each : names) {
-            if(names.indexOf(each) == names.lastIndexOf(each)){
+        for (String each : names) { //to get each name element
+            if(names.indexOf(each) == names.lastIndexOf(each)){//first and last condition for name unique elements
                 System.out.println(each);
-                // break;
+                // break;//statement for if you want to exit after first element
             }
         }
 

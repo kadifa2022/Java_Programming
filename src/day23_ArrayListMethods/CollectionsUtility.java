@@ -10,8 +10,8 @@ public class CollectionsUtility {
 
         ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 8));
 
-        int max = Collections.max(list);
-        int min = Collections.min(list);
+        int max = Collections.max(list);//max number
+        int min = Collections.min(list);//min
 
         System.out.println("max = " + max);
         System.out.println("min = " + min);

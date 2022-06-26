@@ -1,8 +1,4 @@
-package lab1;
-
-import org.w3c.dom.ls.LSOutput;
-
-
+package lab1_variables_operators;
 
 
 public class UserRegister {

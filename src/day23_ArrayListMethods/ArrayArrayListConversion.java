@@ -9,7 +9,7 @@ public class ArrayArrayListConversion {
 
         String[] arr = {"A", "B", "C", "D"};
 
-        ArrayList<String> list = new ArrayList<>( Arrays.asList(arr) );
+        ArrayList<String> list = new ArrayList<>( Arrays.asList(arr) );//use third constracter pass arr
 
         System.out.println(list);
 
@@ -19,7 +19,7 @@ public class ArrayArrayListConversion {
 
         ArrayList<String> list2 = new ArrayList<>( Arrays.asList("Java", "Python", "C#") );
 
-        String[] languages = list2.toArray(new String[0]);
+        String[] languages = list2.toArray(new String[0]);//to array methode to convert ArrayList to arr
 
         System.out.println(Arrays.toString(languages));
 
