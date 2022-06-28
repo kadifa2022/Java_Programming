@@ -8,15 +8,15 @@ public class ReadFilesWithScanner {
 
     public static void main(String[] args) throws IOException {
 
-        Scanner scan = new Scanner( Path.of("src/day10_string/Test.txt") );
+        Scanner scan = new Scanner( Path.of("src/day10_string/Test.txt") );//read the files
 
       /*
         System.out.println( scan.nextLine() );
         System.out.println( scan.nextLine() );
         System.out.println( scan.nextLine() );
-        */
 
-        /*
+
+
         System.out.println(scan.next());
         System.out.println(scan.next());
         System.out.println(scan.next());
