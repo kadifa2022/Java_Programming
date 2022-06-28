@@ -5,13 +5,18 @@ import java.util.Scanner;
 public class LogIn {
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter your username");
-        String userName = scan.nextLine();
-        System.out.println("Enter your password");
-        String password = scan.nextLine();
+        String correctUserName="Cydeo",
+                correctPassword="Woodenspoon";
 
-        if(userName.equals("Cydeo") && password.equals("WoodenSpoon")){
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your username");
+        String userName = input.nextLine();
+        System.out.println("Enter your password");
+        String password = input.nextLine();
+        input.close();
+
+        if(userName.equals(correctUserName) && password.equals(correctPassword)){
             System.out.println("You are logged in");
             } else {
                 System.out.println("Incorrect username or password. Please try again");
