@@ -9,14 +9,16 @@ public class LongestString {
         System.out.println("Enter two strings");
         String str1 = input.nextLine();
         String str2 = input.nextLine();
+        input.close();
 
-        if (str1.length()>str2.length()) {
+
+        if (str1.length()>str2.length()) {//largest string
             System.out.print("First string is longest");
-        }else if(str1.length()==str2.length()) {
-            System.out.println("Equal");
-        }else{
+        }else if(str2.length()>str1.length()) {
             System.out.println("Second string is the largest");
-            input.close();
+        }else{
+            System.out.println("Equal");
+
         }
 
 

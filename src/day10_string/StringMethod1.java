@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class StringMethod1 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//to find  each character
         String str = "Cydeo";
         //  index:    01234
 
@@ -28,32 +28,32 @@ public class StringMethod1 {
 
         System.out.println("--------------------------------------------------");
 
-        String sentence = "Java Programming Language";
+        String sentence = "Java Programming Language";//length of string 25 and
 
-        int length = sentence.length();
+        int length = sentence.length();//int for the number of the length
 
         System.out.println(length);
 
         int lastIndex = length - 1;
 
-        System.out.println(lastIndex);
+        System.out.println(lastIndex);//to find last index
 
 
         System.out.println("--------------------------------------------------");
 
         String s1 = "Java is the best programming language";
 
-        char f = s1.charAt(0);
+        char f = s1.charAt(0); //first
 
-        int lastIndexNum = s1.length() - 1;
+        int lastIndexNum = s1.length() - 1;//last character of sentence
 
-        char l = s1.charAt(lastIndexNum);
+        char l = s1.charAt(lastIndexNum);//last index methode
 
         System.out.println(f + " : " + l);
 
         System.out.println("--------------------------------------------------");
 
-        String name1 = "Umran";
+        String name1 = "Umran";//equals methode
         String name2 = new String("Umran");
 
         System.out.println(name1 == name2);//false
@@ -79,10 +79,10 @@ public class StringMethod1 {
         Scanner input= new Scanner(System.in);
 
         System.out.println("How old are you?");
-        int age = input.nextInt();
+        int age = input.nextInt();//for age
 
         System.out.println("Are you a US citizen? yes/no");
-        String answer = input.next();
+        String answer = input.next(); //for literate
 
         if (age >= 21 && answer.equals("yes")) {
             System.out.println("Eligible to vote");
