@@ -1,4 +1,4 @@
-package day29_.Encapsulation;
+package day29_inheritance.Encapsulation;
 
 public class Student {//instant variables
 

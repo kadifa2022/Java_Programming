@@ -1,4 +1,4 @@
-package day29_.AnimalTasks;
+package day29_inheritance.AnimalTasks;
 
 public class Animal {
     private String name;

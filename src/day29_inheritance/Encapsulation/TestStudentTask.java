@@ -1,6 +1,4 @@
-package day29_.Encapsulation;
-
-import java.sql.SQLOutput;
+package day29_inheritance.Encapsulation;
 
 public class TestStudentTask {
 

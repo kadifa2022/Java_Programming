@@ -78,7 +78,7 @@ Create a class named Iphone
             Add a static block to initialize all the statics
 
             Methods:
-                printOperatingSystem(): displays the operating system of the iphone
+                printOperatingSystem(): displays the operating system of the phoneTask
                 call(long phoneNumber)
                 text(long phoneNumber)
                 faceTime(long phoneNumber)

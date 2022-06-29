@@ -1,15 +1,15 @@
 package day26_static;
 
 public class IPhone {
-    public static String brand = "Apple"; //static: "Apple" is the brand of all the iphone objects
+    public static String brand = "Apple"; //static: "Apple" is the brand of all the phoneTask objects
 
-    public String model; //instance: different models for iphone objects
+    public String model; //instance: different models for phoneTask objects
 
     public String color;
 
     public double price;
 
-    public static String OS = "iOS"; // static: operating system is same fro all the iphone objects
+    public static String OS = "iOS"; // static: operating system is same fro all the phoneTask objects
 
     public static String madeIn = "China";
 
