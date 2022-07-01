@@ -1,6 +1,6 @@
 package day29_inheritance.AnimalTasks;
 
-public class Zoo {
+public class ZooTestObjects {
     public static void main(String[] args) {
 
 

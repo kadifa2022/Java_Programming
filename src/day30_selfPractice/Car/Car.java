@@ -54,9 +54,9 @@ public class Car {
     public Car(String make, String model, String color, int year, double price) {
         setMake(make);
         setModel(model);
-       setColor(color);
+        setColor(color);
         setYear(year);
-       setPrice(price);
+        setPrice(price);
     }
 
     public String toString() {
