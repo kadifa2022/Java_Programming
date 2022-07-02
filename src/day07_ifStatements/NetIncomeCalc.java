@@ -7,7 +7,7 @@ public class NetIncomeCalc {
         boolean isMarried = true;
 
 
-        double taxRate = 0;
+        double taxRate = 0;//temporary value
 
         if(salary >= 130000){ // if the salary is 130k or more, then the tax rate should be 35%
             taxRate = 0.35;
@@ -27,7 +27,7 @@ public class NetIncomeCalc {
 
 
         if(isMarried){  // if the person is married
-            taxRate -= 0.05; //tax is reduced by 5%
+            taxRate -= 0.05; //tax is reduced by 5% -=
         }
 
         double totalTax = salary * taxRate;

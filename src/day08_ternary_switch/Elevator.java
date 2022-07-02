@@ -1,6 +1,6 @@
 package day08_ternary_switch;
 
-public class Elevator {
+public class Elevator {//nested if -else is not mandatory for nested if
 
     public static void main(String[] args) {
 

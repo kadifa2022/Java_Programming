@@ -5,7 +5,7 @@ public class NestedIfIntro {
 
         int score = 300;
 
-        if (score >= 0 && score <= 100) { //if the score is valid
+        if (score >= 0 && score <= 100) { //if the score is valid//pre conditions //nested if statement
             if (score >= 60){ // if the score is grater or equal to 60
                 System.out.println("Passed");
             }else{ // if the score is less than 60
@@ -18,7 +18,7 @@ public class NestedIfIntro {
 
             int age = -200; // 1 ~ 150
 
-            if (age >= 1 && age <= 150) {
+            if (age >= 1 && age <= 150) {//pre conditions
 
                 if (age >= 21) {
                     System.out.println("Eligible");

@@ -4,7 +4,7 @@ public class Grade {
 
     public static void main(String[] args) {
 
-        char grade = 'A';
+        char grade = 'A';//not best solution
 
         String result = "";
 

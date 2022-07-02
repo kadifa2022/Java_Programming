@@ -9,7 +9,7 @@ public class Grade2 {
 
             char grade = 'B';
 
-            String result = "";
+            String result = "";//variable String
 
             if (grade == 'A') {
                 result = "Excellent";

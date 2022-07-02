@@ -3,9 +3,9 @@ package day07_ifStatements;
 public class GradeLevel {
     public static void main(String[] args) {
 
-        int gradeLevel = 6; //1~8
+        int gradeLevel = 6; //1~18 variable
 
-      String result = "";
+      String result = "";//to store value
 
         if(gradeLevel <= 5) {  // false: gradeLevel >=6
             result = "Elementary School";

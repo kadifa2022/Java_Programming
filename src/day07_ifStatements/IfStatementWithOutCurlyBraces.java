@@ -1,6 +1,6 @@
 package day07_ifStatements;
 
-public class IfStatementWithOutCurlyBraces {
+public class IfStatementWithOutCurlyBraces {//curly braces is not good practice
 
     public static void main(String[] args) {
 
@@ -15,7 +15,7 @@ public class IfStatementWithOutCurlyBraces {
 
         System.out.println("------------------------------------------");
 
-        if(age >=21) System.out.println("Eligible");
+        if(age >=21) System.out.println("Eligible");//only possible if is only one statement there is no need for curly braces
         else System.out.println("Not Eligible");
 
         System.out.println("------------------------------------------");
@@ -23,8 +23,8 @@ public class IfStatementWithOutCurlyBraces {
         /*
         int itemNum = 1;
         if(itemNum == 1)
-            System.out.println("Eggs");
-            System.out.println("Orange");
+            System.out.println("Eggs");//two code fragments
+            System.out.println("Orange");//
         else if(itemNum == 2)
             System.out.println("Milk");
             System.out.println("Onion");

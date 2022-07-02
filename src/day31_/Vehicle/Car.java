@@ -18,7 +18,7 @@ package day31_.Vehicle;
 
 
 /*
-2. Create a sub class of Vehicle named Car
+2. Create a sub class of Vehicle named Car_methodeOverriding
 			Extra methods:
 				drive()
  */

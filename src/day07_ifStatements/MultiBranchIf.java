@@ -1,19 +1,21 @@
 package day07_ifStatements;
 
 public class MultiBranchIf {
-    public static void main(String[] args) {int num = 100;
+    public static void main(String[] args) {
 
-        String result = "";
+        int num = 100;
 
-        if(num > 0){ // true
+        String result = "";//with if statement every single condition will be checked
+
+        if (num > 0) { // true
             result = "Positive";
         }
 
-        if(num < 0){
+        if (num < 0) {
             result = "Negative";
         }
 
-        if(num == 0){
+        if (num == 0) {
             result = "Zero";
         }
 
@@ -21,13 +23,13 @@ public class MultiBranchIf {
 
         System.out.println("------------------------------------------------");
 
-        String result2 = "";
+        String result2 = "";//variable string
 
-        if(num > 0){
-            result2 = "Positive" ;
-        }else if(num < 0){
+        if (num > 0) {//multibranch statement
+            result2 = "Positive";//execute first true statement
+        } else if (num < 0) {
             result2 = "Negative";
-        }else{
+        } else {
             result2 = "Zero";
         }
 
