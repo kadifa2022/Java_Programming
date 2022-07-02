@@ -15,8 +15,8 @@ public class ScannerIntro3 {
 
 
         System.out.println("Would you like to continue?");
-        String answer = input.next();  // I do not know ==> I
-        // String answer = input.nextLine(); // I do not know ==> I do not know
+        String answer = input.next();  // I do not know ==> I//first char
+        // String answer = input.nextLine(); // I do not know ==> I do not know --reed all line
 
         System.out.println("You have entered: " + answer);
 
