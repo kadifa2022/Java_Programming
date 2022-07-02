@@ -5,14 +5,15 @@ public class FieldTrip {
     public static void main(String[] args) {
 
 
-        int grade = 6;
+        int grade = 1;
 
         String location = "Unknown";
         int numOfGroups = 0;
         String teacher = " Unknown";
 
 
-        if (grade >= 1 && grade <= 6) {
+        if (grade >= 1 && grade <= 6) {//nested if
+
             if(grade == 1){
             location = "Apple orchard";
             numOfGroups = 3;

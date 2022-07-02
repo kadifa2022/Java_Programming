@@ -15,8 +15,8 @@ public class TernariesIntro {
         }System.out.println(result);
 
         System.out.println("----------------------------------------------------");
-
-        String result2 = (score >= 60) ? "Passed" : "Failed";
+         //assign to string
+        String result2 = (score >= 60) ? "Passed" : "Failed";//ternary or shorthand of if and else
 
         System.out.println(result2);
 
@@ -33,7 +33,7 @@ public class TernariesIntro {
         }
     */
 
-        String result3 =  (age >= 21) ? "Eligible" : "Not eligible" ;
+        String result3 =  (age >= 21) ? "Eligible" : "Not eligible" ;//ternary must match if and else (? = :) returns one value and data must be the same
 
         System.out.println(result3);
 
