@@ -7,7 +7,7 @@ public class SwitchStatementIntro2 {
         int n = 9;
 
         String day ="";
-        switch(n){
+        switch(n){//must match expression witch is in this case number-int
             case 1:
                 System.out.println("Monday");
                 break;

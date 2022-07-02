@@ -20,8 +20,8 @@ public class SwitchIntro {
          */
 
         /*
-        String result;
-        if (grade == 'A'){
+        String result;//multibranch if statement
+        if (grade == 'A'){//equal operator for boolean
             result = "Excellent";
         }else if (grade == 'B'){
             result = "Great Job";
@@ -41,14 +41,14 @@ public class SwitchIntro {
 
 
 
-        switch (grade) {
+        switch (grade) {//comparing value-use to pass one value-and finding matching data
 
-            case 'B':
+            case 'A'://case value must match with the data type of expression char to char, int-int, string -string
+                System.out.println("Excellent");//expression (long, double,float and boolean can't be accepted in switch)
+                break;//case closed
+
+            case 'B':// case can't be the same
                 System.out.println("Great Job");
-                break;
-
-            case 'A':
-                System.out.println("Excellent");
                 break;
 
             case 'C':
@@ -63,8 +63,8 @@ public class SwitchIntro {
                 System.out.println("Failed");
                 break;
 
-            default:
-                System.out.println("Invalid");
+            default://preferred to place on the end
+                System.out.println("Invalid");//no need to add break on the last block will exit the switch automatically
 
         }
 
