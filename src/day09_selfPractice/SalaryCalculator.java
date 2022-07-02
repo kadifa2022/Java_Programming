@@ -43,6 +43,13 @@ public class SalaryCalculator {
 
 
     }
+
+    public static class EligibleToBuyAlcohol {
+
+        public static void main(String[] args) {
+
+        }
+    }
 }
 
 
