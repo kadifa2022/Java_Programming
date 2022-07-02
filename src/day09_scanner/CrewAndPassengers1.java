@@ -3,14 +3,32 @@ package day09_scanner;
 public class CrewAndPassengers1 {
 
 
-    public static void main(String[] args) {int number = 75;
+    public static void main(String[] args) {
+
+
+        int number = 75;
+
+        String result1 = (number == 50 || number == 75 || number == 100) ?//ternary
+                (number == 50) ? "20 crew, 30 passengers"
+                        : (number == 75) ? "25 crew, 50 passengers"
+                        : "30 crew, 70 passengers"
+                : "invalid";
+        System.out.println(result1);
+
+
+        System.out.println("-----------------------------------------------------------");
+
+
+     //   System.out.println(5*(2+3));
+
+
+
 
         if (number ==50 || number  ==75 || number==100){
 
-            switch(number){
+            switch(number){//switch//can't be boolean,long, float and double
                 case 50:
-
-                    System.out.println("20 crew, 30 passengers");
+                    System.out.println("20 crew, 30 passengers");//ascending order from smaller to bigger number or A-Z
                 case 75:
                     System.out.println("25 crew, 50 passengers");
                     break;
