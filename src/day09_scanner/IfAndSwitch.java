@@ -6,9 +6,9 @@ public class IfAndSwitch {
 
         int number = 75;
 
-        if (number ==50 || number  ==75 || number==100){
+        if (number ==50 || number  ==75 || number==100){//if statement
 
-            switch(number){
+            switch(number){//switch statement
                 case 50:
 
                     System.out.println("20 crew, 30 passengers");
