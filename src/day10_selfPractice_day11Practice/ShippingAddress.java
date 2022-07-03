@@ -27,8 +27,12 @@ public class ShippingAddress {
 
         System.out.println("\t" + full_name);
         System.out.println("\t" + buildingNumber+ " " +streetName);
-        System.out.println("\t" + cityName + ", " + state + " " + zipCode
-        );
+        System.out.println("\t" + cityName + ", " + state + " " + zipCode);
+
+
+        input.close();
+
+
     }}
 /*
         System.out.println("full_name= " + full_name);
