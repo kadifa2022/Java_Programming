@@ -4,7 +4,7 @@ public class Developer extends Employee {
 
     public Developer(String name, int age, char gender, String id, String jobTitle, double salary, String programmingLanguage) {
         super(name, age, gender, id, jobTitle, salary);
-        this.programmingLanguage = programmingLanguage;
+        setProgrammingLanguage(programmingLanguage);
     }
 
     private String programmingLanguage;
@@ -22,5 +22,13 @@ public class Developer extends Employee {
     @Override
     public void work() {
         System.out.println(getName() + " is codding in" +programmingLanguage);
+
+    }
+
+    @Override
+    public String toString() {
+        return super.toString().replace("{" , " ")+
+                "programmingLanguage='" + programmingLanguage + '\'' +
+                '}';
     }
 }
