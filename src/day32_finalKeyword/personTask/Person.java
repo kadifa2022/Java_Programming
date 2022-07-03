@@ -6,7 +6,7 @@ public class Person {
 
     private String name;
     private final char gender;
-    private final int age;
+    private final int age; //age was called to packet 33
     private final LocalDate dateOfBirth;
 
 
