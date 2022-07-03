@@ -20,13 +20,13 @@ public class Developer extends Employee {
 
 
     @Override
-    public void work() {
+    public void work() {//overriding methode
         System.out.println(getName() + " is codding in" +programmingLanguage);
 
     }
 
     @Override
-    public String toString() {
+    public String toString() {//to string methode to add programing language
         return super.toString().replace("{" , " ")+
                 "programmingLanguage='" + programmingLanguage + '\'' +
                 '}';
