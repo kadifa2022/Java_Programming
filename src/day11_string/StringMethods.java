@@ -54,16 +54,16 @@ public class StringMethods {
 
         System.out.println(firstA);
 
-        int secondA = s1.indexOf("a ");
+        int secondA = s1.indexOf("a ");//for second char. we add space
 
 
         String s2 = "Java Python JavaScript Cydeo Python";
 
-        int a1 = s2.indexOf('a');
+        int a1 = s2.indexOf('a'); //for index num. int
 
         System.out.println(a1);
 
-        int a2 = s2.indexOf("a Python");
+        int a2 = s2.indexOf("a Python");//defining second a in sentence
 
         System.out.println(a2);
 

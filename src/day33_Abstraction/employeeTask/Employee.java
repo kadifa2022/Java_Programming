@@ -82,3 +82,10 @@ public abstract class Employee {//meant to be parented to sub clas--provide vari
                 '}';
     }
 }
+/*
+Employee:
+		Variables:
+			name, age, gender, id, jobTitle, salary ....
+		Methods:
+		  abstract work();
+ */

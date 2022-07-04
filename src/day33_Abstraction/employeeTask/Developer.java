@@ -21,7 +21,7 @@ public class Developer extends Employee {
 
     @Override
     public void work() {//overriding methode
-        System.out.println(getName() + " is codding in" +programmingLanguage);
+        System.out.println(getName() + " is codding in " +programmingLanguage);
 
     }
 
@@ -32,3 +32,9 @@ public class Developer extends Employee {
                 '}';
     }
 }
+/*
+Developer:
+		work() { coding }
+
+
+ */

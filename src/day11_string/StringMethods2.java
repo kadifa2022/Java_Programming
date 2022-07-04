@@ -61,7 +61,7 @@ public class StringMethods2 {
 
         String email = "CydeoSchoolJavaProgramming@yahoo.com";
 
-        int beginning = email.indexOf("@") + 1;
+        int beginning = email.indexOf("@") + 1;//methode to print domain email
         int ending = email.lastIndexOf('.');
 
         String domain =  email.substring(beginning, ending);
@@ -72,9 +72,9 @@ public class StringMethods2 {
 
         String sentence6 = "I love Java programming";
 
-        // String r1 = sentence6.substring(7, sentence6.length());
+        // String r1 = sentence6.substring(7, sentence6.length());//one way to dom it
 
-        String r1 = sentence6.substring(7);
+        String r1 = sentence6.substring(7);//by default will include to the end of the string
 
         System.out.println(r1);
 
@@ -83,7 +83,7 @@ public class StringMethods2 {
 
         String sentence7 = "Today is Sunday, Tomorrow is Monday";
 
-        String tomorrow =  sentence7.substring( sentence7.lastIndexOf(" ") + 1 );
+        String tomorrow =  sentence7.substring( sentence7.lastIndexOf(" ") + 1 );// last word of the string
         // create the substring "Monday" from sentence7. DO NOT count any index numbers
 
         System.out.println(tomorrow);
@@ -92,7 +92,7 @@ public class StringMethods2 {
 
         String str = "Python";
 
-        String result = (str +"\n").repeat(10);
+        String result = (str +"\n").repeat(10);//repeating methode in separate lines
 
         System.out.println(result);
 

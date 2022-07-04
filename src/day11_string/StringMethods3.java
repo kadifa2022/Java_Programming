@@ -2,7 +2,7 @@ package day11_string;
 
 public class StringMethods3 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//nine methods boolean
 
         String word = "";
 
@@ -22,13 +22,13 @@ public class StringMethods3 {
 
         //------------------------------------
 
-        String str1 = "Cydeo";
+        String str1 = "Cydeo";//string literal in string pool
 
-        String str2 = new String("Cydeo");
+        String str2 = new String("Cydeo");//new memory outside pool
 
-        System.out.println(str1 == str2);
+        System.out.println(str1 == str2);//to compare don't use equal operator
 
-        System.out.println( str1.equals(str2) );
+        System.out.println( str1.equals(str2) );//equal method use for compare
 
         String str3 = new String("cydeo");
 
@@ -38,6 +38,7 @@ public class StringMethods3 {
 
         String s1 = "JAVA";
         String s2 = "java";
+        //for case sensitivity
 
         System.out.println(s1.equals(s2)); //false
         System.out.println(s1.equalsIgnoreCase(s2)); // true
