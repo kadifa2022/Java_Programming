@@ -1,12 +1,17 @@
 package day33_selfPractice.shape;
 
 public class Circle extends Shape {
+    private double radius;
+    public final static double pi;
     public Circle(double radius) {
-        super();
+
         setRadius(radius);
     }
+    static{
+        pi=3.14;
+    }
 
-    private double radius;
+
 
     public double getRadius() {
         return radius;
@@ -37,10 +42,10 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
-        return super.toString().replace("}" , " ")+
+        return getName()+ "{"+
                 ", radius=" + radius +
-                ", perimeter=" + perimeter() +
-                ", area=" + area() +
+                ", perimeter='" + perimeter() + '\'' +
+                ", area='" + area() + '\'' +
                 '}';
     }
 }
