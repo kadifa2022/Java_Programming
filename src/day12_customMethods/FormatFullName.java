@@ -6,7 +6,7 @@ public class FormatFullName {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);//this is with the scanner
 
         System.out.println("Enter your first name:");
         String first = input.nextLine().trim().replace(" ", "");
