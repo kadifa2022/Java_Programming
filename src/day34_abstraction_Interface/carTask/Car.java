@@ -7,7 +7,7 @@ public abstract class Car{
      private final int year;
     private double price;// setter can't be set for final
 
-    public Car(String make, String model, String color, int year, double price) {
+    public Car(String model, String color, String s, int year, double price) {
         this.make = getClass().getCanonicalName();//to set the class name to the make of the car
         this.model = model;
         this.color = color;//because they are not final
@@ -17,8 +17,6 @@ public abstract class Car{
             System.exit(1);
         }
         this.year = year;
-
-        this.price = price;
         setPrice(price);
     }
 
@@ -47,6 +45,9 @@ public abstract class Car{
     }
 
     public void setPrice(double price) {
+        if(price<=0)
+            System.err.println("Invalid Price: " + price);
+        System.exit(1);
         this.price = price;
 
     }
