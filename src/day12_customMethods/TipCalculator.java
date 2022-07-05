@@ -24,7 +24,7 @@ public class TipCalculator {
 
         input.close(); // close scanner
 
-        double totalTip = (service.equals("excellent"))? amount * 0.25  // 25
+        double totalTip = (service.equals("excellent"))? amount * 0.25  // 25//ternary
                 :(service.equals("great"))? amount * 0.2
                 :(service.equals("good"))? amount * 0.15
                 :(service.equals("fair"))? amount * 0.1
@@ -38,7 +38,7 @@ public class TipCalculator {
         System.out.println("Total tip: "+totalTip);
 
         if(yesNo.equals("yes")){
-            System.out.println("Total per person: " +  (totalToPay/numberOfPeople) );
+            System.out.println("Total per person: " +  (totalToPay/numberOfPeople) );//devide by number fo people
             System.out.println("Tip per person: " + (totalTip/numberOfPeople) );
         }
 

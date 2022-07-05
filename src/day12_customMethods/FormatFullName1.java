@@ -20,6 +20,7 @@ public class FormatFullName1 {
         String lastN = input.nextLine();
 
         System.out.println(firstN+  " " +lastN);
+        input.close();
 
 
         System.out.println("--------------------------------------------------------------------");

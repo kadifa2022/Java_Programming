@@ -8,7 +8,7 @@ public class CustomMethodsPractice {
         maxNum(10.5, 20.5);//max number
 
 
-        System.out.println("---------------------------------------");
+        System.out.println("---------------------------------------");//custom methode
 
         maxNum(15000, 16000);
 
@@ -63,6 +63,11 @@ public class CustomMethodsPractice {
 
 
 }
+/*
+   2. Create a methode that can display the initials of a parson.
+
+    1. Create a methode that can print the maximum number between two numbers, if both are equal print"equal".
+ */
 
 
 
