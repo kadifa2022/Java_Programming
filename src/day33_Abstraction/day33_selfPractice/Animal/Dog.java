@@ -1,4 +1,4 @@
-package day33_selfPractice.Animal;
+package day33_Abstraction.day33_selfPractice.Animal;
 
 public class Dog extends Animal{
     public Dog(String name, String breed, char gender) {

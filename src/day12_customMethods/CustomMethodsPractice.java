@@ -42,7 +42,7 @@ public class CustomMethodsPractice {
     public static void maxNum(double num1, double num2) {//Methode to find maxNumber
 
         if (num1 > num2) {
-            System.out.println(num1 + " is the maximum number");//Methode for any two numbers to find maxNumber
+            System.out.println(num1 + " is the maximum number");//Methode for any two numbers to find maxNumber int and decimal any number 
         } else if (num2 > num1) {
             System.out.println(num2 + " is the maximum number");
         } else {

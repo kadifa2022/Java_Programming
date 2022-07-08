@@ -31,7 +31,7 @@ public class WarmupTasks {
     public static void calculate(double num1, double num2, char mathOperator) {//CUSTOM METHOD FOR CALCULATOR
 
 
-        switch (mathOperator) {
+        switch (mathOperator) {//switch can't accept  (double,long, boolean, float)//nothing is mandotery in switch like case block
 
             case '+':
                 System.out.println(num1 + " " + mathOperator + " " + num2 + " = " + (num1 + num2));

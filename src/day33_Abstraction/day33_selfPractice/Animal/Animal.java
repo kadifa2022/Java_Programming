@@ -1,4 +1,4 @@
-package day33_selfPractice.Animal;
+package day33_Abstraction.day33_selfPractice.Animal;
 
 public abstract class Animal {
 

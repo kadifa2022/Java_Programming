@@ -1,4 +1,4 @@
-package day33_selfPractice.shape;
+package day33_Abstraction.day33_selfPractice.shape;
 
 public class Rectangle extends Shape{
 
