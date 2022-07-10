@@ -54,10 +54,8 @@ public class PolymorphismPractice3 {
                 countDeveloper++;
             }else if(each instanceof Tester){ // if the employee is Tester
                 countTester++;
-            }else if(each instanceof Employee){ // if the employee is Teacher
+            }else { // if the employee is Teacher
                 countTeacher++;
-            }else{
-                countDriver++;
             }
 
         }
