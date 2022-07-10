@@ -13,6 +13,12 @@ public class Driver extends Employee{
     }
     public void drive(){
         work();
+
     }
 
 }
+/*
+6. Driver:
+					extra methods:
+						drive()
+ */

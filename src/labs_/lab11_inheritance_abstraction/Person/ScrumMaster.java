@@ -39,6 +39,12 @@ public final class ScrumMaster extends Employee implements ScrumMember,WFH{
     }
 }
 
+/*
+4. ScrumMaster:
+					extra methods:
+						coaching(), dailyStandUp(), workFromHome()
 
+
+ */
 
 

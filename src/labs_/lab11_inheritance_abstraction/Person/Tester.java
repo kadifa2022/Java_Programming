@@ -34,3 +34,10 @@ public class Tester extends Employee implements ScrumMember, WFH{
 
     }
 }
+/*
+3. Create the following sub classes of the Employee:
+			1. Tester
+					extra methods:
+						createTicket(), dailyStandUp(), workFromHome()
+
+ */

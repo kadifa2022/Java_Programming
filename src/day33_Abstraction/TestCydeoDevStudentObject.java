@@ -2,6 +2,8 @@ package day33_Abstraction;
 
 import java.time.LocalDate;
 
+import java.time.LocalDate;
+
 public class TestCydeoDevStudentObject {
 
     public static void main(String[] args) {
@@ -10,7 +12,7 @@ public class TestCydeoDevStudentObject {
 
         System.out.println(student1);
 
-        student1.eat();//methods
+        student1.eat();
         student1.drink();
         student1.sleep();
         student1.breath();

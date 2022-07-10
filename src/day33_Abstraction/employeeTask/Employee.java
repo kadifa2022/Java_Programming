@@ -1,25 +1,27 @@
 package day33_Abstraction.employeeTask;
-
+/*
 public abstract class Employee {//meant to be parented to sub clas--provide variables and methods to subclass
                                   //abstract class can't be FINAL, PRIVATE, STATIC-NEVER
-                                   //can't have body
+      */                             //can't have body
+
+public abstract class Employee {
 
     private String name;
     private int age;
     private char gender;
     private String id;
     private String jobTitle;
+    private double salary;
+
 
     public Employee(String name, int age, char gender, String id, String jobTitle, double salary) {
-       setName(name);
-       setAge(age);
-       setGender(gender);
-       setId(id);
-      setJobTitle(jobTitle);
-      setSalary(salary);
+        setName(name);
+        setAge(age);
+        setGender(gender);
+        setId(id);
+        setJobTitle(jobTitle);
+        setSalary(salary);
     }
-
-    private double salary;
 
     public String getName() {
         return name;
@@ -68,11 +70,13 @@ public abstract class Employee {//meant to be parented to sub clas--provide vari
     public void setSalary(double salary) {
         this.salary = salary;
     }
-    public abstract void work();// abstract methode( uncompleted method)--can't have body
 
-    @Override
+
+    public abstract void work(); // abstract method (uncompleted method)
+
+
     public String toString() {
-        return getClass().getSimpleName() + "{" +
+        return getClass().getSimpleName()+"{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
@@ -81,7 +85,10 @@ public abstract class Employee {//meant to be parented to sub clas--provide vari
                 ", salary=" + salary +
                 '}';
     }
+
+
 }
+
 /*
 Employee:
 		Variables:

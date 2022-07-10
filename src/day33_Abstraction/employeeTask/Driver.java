@@ -8,10 +8,8 @@ public class Driver extends Employee{
 
     @Override
     public void work() {
-        System.out.println(getName() + " is Driving");
-
+        System.out.println(getName() +" is driving");
     }
-
 
 }
 /*

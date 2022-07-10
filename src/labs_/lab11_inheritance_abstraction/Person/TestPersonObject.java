@@ -7,7 +7,7 @@ public class TestPersonObject {
 
 
         BusinessAnalyst businessAnalyst= new BusinessAnalyst("Ilfo",23,'M',"1A","Analyst",120000);
-        Developer developer = new Developer("Budo", 36, 'M', "A2","Developer", 90000);
+        Developer developer = new Developer("Budo", 36, 'M', "A2","Developer", 90000, "Java");
         Driver driver = new Driver("Hasib", 45, 'M', "A23","Driver",120000);
         Janitor janitor = new Janitor("Bibi", 17, 'F',"B1","Supervisor", 50000);
         ScrumMaster scrumMaster = new ScrumMaster("Susy", 30,'F',"A14","Scrum Master", 110000);

@@ -1,10 +1,8 @@
 package labs_.lab11_inheritance_abstraction.Person;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 public class Developer extends Employee implements ScrumMember, WFH{
 
-    public Developer(String name, int age, char gender, String id, String jobTitle, double salary) {
+    public Developer(String name, int age, char gender, String id, String jobTitle, double salary, String java) {
         super(name, age, gender, id, jobTitle, salary);
 
     }
@@ -36,4 +34,12 @@ public class Developer extends Employee implements ScrumMember, WFH{
         System.out.println(getName()+ "is working from home");
 
     }
+
 }
+/*
+2. Developer
+					extra methods:
+						fixBug(), dailyStandUp(), workFromHome()
+
+
+ */

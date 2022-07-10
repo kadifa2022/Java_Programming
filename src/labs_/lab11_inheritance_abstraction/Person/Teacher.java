@@ -24,6 +24,13 @@ public class Teacher extends Employee implements WFH{
 
     }
 }
+/*
+5. Teacehr:
+					extra methods:
+						teach(), workFromHome()
+
+
+ */
 
 
 

@@ -39,4 +39,9 @@ public final class BusinessAnalyst extends Employee implements ScrumMember, WFH{
     }
 }
 
+/*
+3. BusinessAnalyst
+					extra methods:
+						analyze(), dailyStandUp(), workFromHome()
 
+ */

@@ -7,12 +7,11 @@ public class Eagle extends Animal implements Flyable, WildAnimal{
 
     @Override
     public void eat() {
-        System.out.println("Eagle " +getName()+"is eating snake");
-
+        System.out.println("Eagle "+getName()+" is eating snake");
     }
 
     @Override
-    public void fly() {//make
+    public void fly() {
 
     }
 
@@ -21,3 +20,4 @@ public class Eagle extends Animal implements Flyable, WildAnimal{
 
     }
 }
+

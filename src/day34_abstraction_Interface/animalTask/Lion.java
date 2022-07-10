@@ -7,8 +7,7 @@ public class Lion extends Animal implements WildAnimal{
 
     @Override
     public void eat() {
-        System.out.println("Lion " +getName()+"is eating buffalo");
-
+        System.out.println("Lion "+getName()+" is eating buffalo");
     }
 
     @Override

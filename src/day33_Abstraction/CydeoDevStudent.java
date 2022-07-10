@@ -3,6 +3,10 @@ import day32_finalKeyword.personTask.Person;
 
 import java.time.LocalDate;//please check this task and compare
 
+import day32_finalKeyword.personTask.Person;
+
+import java.time.LocalDate;
+
 public final class CydeoDevStudent extends Person {
 
     private final String id;
@@ -13,7 +17,7 @@ public final class CydeoDevStudent extends Person {
 
     public CydeoDevStudent(String name, char gender, LocalDate dateOfBirth, String id, String batchName, int batchNumber) {
         super(name, gender, dateOfBirth);
-        if (getAge() < 18) { // if age is set to less than 18/constructor  called, because it was set final and that's mean no setter
+        if (getAge() < 18) { // if age is set to less than 18
             System.err.println("Cydeo Developer student must be at least 18 years old");
             System.exit(1);
         }
