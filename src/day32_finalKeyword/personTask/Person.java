@@ -28,6 +28,13 @@ public class Person {
 
     }
 
+    public Person(char gender, int age, LocalDate dateOfBirth) {
+
+        this.gender = gender;
+        this.age = age;
+        this.dateOfBirth = dateOfBirth;
+    }
+
     public String getName() {
         return name;
     }

@@ -17,6 +17,10 @@ public class Animal {
     public Animal(String john, String american_eagle, char m, int i, String small, String s) {
     }
 
+    public Animal() {
+
+    }
+
     public void setInfo(String name, String breed, char gender, int age, String size, String color) {//set info method
         setName(name);
         setBreed(breed);

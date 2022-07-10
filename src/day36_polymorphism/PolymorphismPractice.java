@@ -1,4 +1,4 @@
-package day36_;
+package day36_polymorphism;
 
 import day30_.phoneTask.IPhone;
 import day30_.phoneTask.Nokia;
@@ -65,6 +65,7 @@ public class PolymorphismPractice {
                 }
             }
         }
+        //==, .equals()
 
 
 

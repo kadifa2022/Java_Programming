@@ -5,9 +5,12 @@ public class Tiger extends Animal {
         super();
     }//tiger is Animal
 
+    public Tiger() {
+
+    }
 
 
-        public void hunt(){
+    public void hunt(){
             System.out.println(getName()+" is hunting");
         }
 

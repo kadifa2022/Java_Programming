@@ -13,10 +13,6 @@ public class Employee extends Person {
         setSalary(salary);
     }
 
-    public Employee(String james, int gender, char m, String b1, String math_teacher, int i) {
-        super();
-    }
-
     public String getJobTitle() {
         return jobTitle;
     }
@@ -53,3 +49,8 @@ public class Employee extends Person {
 
 
 }
+
+
+
+
+
