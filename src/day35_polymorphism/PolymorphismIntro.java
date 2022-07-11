@@ -1,7 +1,7 @@
 package day35_polymorphism;
 
 
-import day31_.shape_methodOverriding.Circle;
+import day31_inheritance.shape_methodOverriding.Circle;
 
 import day33_Abstraction.employeeTask.*;
 

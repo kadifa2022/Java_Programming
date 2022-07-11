@@ -1,9 +1,9 @@
 package day36_polymorphism;
 
-import day30_.phoneTask.IPhone;
-import day30_.phoneTask.Nokia;
-import day30_.phoneTask.Phone;
-import day30_.phoneTask.Samsung;
+import day30_inheritance.phoneTask.IPhone;
+import day30_inheritance.phoneTask.Nokia;
+import day30_inheritance.phoneTask.Phone;
+import day30_inheritance.phoneTask.Samsung;
 
 public class PolymorphismPractice {
 
