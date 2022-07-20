@@ -1,10 +1,8 @@
 package day35_polymorphism;
-import day29_selfPractice.employeeTask.Teacher;
-import day33_Abstraction.employeeTask.Developer;
-import day33_Abstraction.employeeTask.Driver;
-import day33_Abstraction.employeeTask.Employee;
-import day33_Abstraction.employeeTask.Tester;
-import labs_.lab11_inheritance_abstraction.Person.BusinessAnalyst;
+import day33_abstraction.employeeTask.Developer;
+import day33_abstraction.employeeTask.Driver;
+import day33_abstraction.employeeTask.Employee;
+import day33_abstraction.employeeTask.Tester;
 
 
 public class PolymorphismPractice3 {

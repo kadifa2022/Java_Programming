@@ -5,9 +5,9 @@ public class EmailTask {
 
         String email = "cydeo_school@gmail.com";
 
-        String firstName = email.substring(0, email.indexOf("_"));//find underscore
+        String firstName = email.substring(0, email.indexOf("_"));//find underscore /character
 
-        String lastName = email.substring(email.indexOf("_") + 1, email.indexOf("@"));//add +1 after underscore
+        String lastName = email.substring(email.indexOf("_") + 1, email.indexOf("@"));//add +1 after underscore//indexOf for to find character
 
         String rest = email.substring(email.indexOf("@"));
 

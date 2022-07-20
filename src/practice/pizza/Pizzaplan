@@ -1,0 +1,37 @@
+
+
+
+1. Capture userName and email  of the user .
+isStrongPassWord(): takes an argument of string and verify if the given string isstrong password, returns boolean            Characteristics of strong passwords are:
+1. Password MUST be at least have 8 characters long, and should not contain space
+2. PassWord should at least contain one letter
+3. Password should at least contain one special characters
+
+4. Password should at least contain a digit
+      class for user information :
+        instance variables->  userName , email ,
+           encapsulate -> setters will have check the validity of the email
+                          check validity of Username and  password and throw exception
+                conditions to be checked (method1): gmail
+                                           hotmail
+                                           .live
+                                           should have one @ and one dot sign
+                                           dot sign comes after @sign
+                                          (method2) check spassword strenght
+
+                                          method 3 check account number
+
+  2.   Second class Pizza
+           method1  static allpizza wehave   add price
+           method2:  instance special pizza   add price
+
+
+ 3. Exception class
+ 3. Main method :
+       create the user object
+       create pizza object
+       add each user to arrayList
+       capture user info (user and email )
+       3 time attempts (if fail throw an exception)
+       cost will be calculated here
+       Configure the order number

@@ -20,7 +20,7 @@ public class TipCalculator {
         double amount = input.nextDouble(); // 100
 
         System.out.println("How was the service quality? (Excellent/Great/Good/Fair/Poor)");
-        String service = input.next().toLowerCase();
+        String service = input.next().toLowerCase();// service all to lower case
 
         input.close(); // close scanner
 
