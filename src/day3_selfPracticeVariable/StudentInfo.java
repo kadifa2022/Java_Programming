@@ -10,7 +10,7 @@ public class StudentInfo {
                 student_id = "A001";
 
         int age = 49;
-        char gender = 'M';
+        char gender = 'F';
         double gpa = 2.8;
 
 
