@@ -68,10 +68,10 @@ public class CollectionPractice {
 
         System.out.println("--------------------------------------------");
 
-        //  List<List<Employee>>  teams = new ArrayList<>();
+        //  list<list<Employee>>  teams = new ArrayList<>();
 
 
-        // List<int[][]>  l = new ArrayList<>();
+        // list<int[][]>  l = new ArrayList<>();
 
 
 

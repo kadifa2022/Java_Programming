@@ -18,7 +18,7 @@ public class ListDemo {
 
         arrayList.get(0);
 
-        LinkedList<Integer> linkedList = new LinkedList<>(); // Node based class (Doubly linked List) ===> add(), addAll(), remove(), removeAll(), removeIf(), retainAll() are faster
+        LinkedList<Integer> linkedList = new LinkedList<>(); // Node based class (Doubly linked list) ===> add(), addAll(), remove(), removeAll(), removeIf(), retainAll() are faster
 
         linkedList.add(100);
         linkedList.add(200);

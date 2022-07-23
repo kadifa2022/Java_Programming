@@ -159,14 +159,14 @@ public class Main {
                 /*
         Creating options
         0 : Make Expense
-        1 : List Specific Person Expense
-        2 : List All Expenses
+        1 : list Specific Person Expense
+        2 : list All Expenses
         3 : Make Split
-        4 : List All Users
+        4 : list All Users
         5 : Close the budget
 
 
-        String[] optionList = {"Make Expense","List Specific Person Expense","List All Expenses","Make Split","List All Users","Close the budget"};
+        String[] optionList = {"Make Expense","list Specific Person Expense","list All Expenses","Make Split","list All Users","Close the budget"};
 
         return optionList;
 
@@ -271,7 +271,7 @@ public class Main {
                     }
 
 
-                    ///List Specific Person Expense
+                    ///list Specific Person Expense
                     //0 - expense amount : 100, expense by :0zzy
                     //1 - expense amount : 100, expense by :0zzy
                     //ozzy spent $ 200
@@ -432,14 +432,14 @@ public class Main {
                 /*
         Creating options
         1 : Make Expense
-        2 : List Specific Person Expense
-        3 : List All Expenses
+        2 : list Specific Person Expense
+        3 : list All Expenses
         4 : Make Split
-        5 : List All Users
+        5 : list All Users
         6 : Close the budget
         */
 
-        String[] optionList = {"Make Expense","List Specific Person Expense","List All Expenses","Make Split","List All Users","Close the budget"};
+        String[] optionList = {"Make Expense","list Specific Person Expense","list All Expenses","Make Split","list All Users","Close the budget"};
 
         return optionList;
 

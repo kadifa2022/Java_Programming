@@ -11,7 +11,7 @@ public class DaysInMonth {
     public static void main(String[] args) {
 
         int month = new Scanner(System.in).nextInt();
-
+            //implicitly give
         if(month < 1 || month > 12){ // if the month is invalid
             System.err.println("Invalid number");
             return; // terminates the main method
@@ -28,8 +28,9 @@ public class DaysInMonth {
                 System.out.println("30 days");
                 break;
 
-            default:
-                System.out.println("31 days");
+            default://default block is for the rest of the months with 31 days
+                System.out.println("31 days");//more months with 31 days
+
 
         }
 

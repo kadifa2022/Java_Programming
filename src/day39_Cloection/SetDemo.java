@@ -84,7 +84,7 @@ public class SetDemo {
         List<Integer> numbers = new ArrayList<>();
         numbers.addAll(Arrays.asList(10, 10, 10, 20, 20, 30, 30, 30, 40, 40, 40, 50, 50, 50,5, 5, 5, 1, 1, 1, 2, 2,2));
 
-        Set<Integer> n = new TreeSet<>(numbers); // List to Set
+        Set<Integer> n = new TreeSet<>(numbers); // list to Set
 
         System.out.println(n);
 

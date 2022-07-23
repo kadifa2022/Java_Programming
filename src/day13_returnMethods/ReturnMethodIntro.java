@@ -10,7 +10,8 @@ package day13_returnMethods;
 
             // int total = sum(20, 40);  // sum is a void method, does not return any data
 
-            int total =   addition(10, 20);//#1TASK
+            int total =   addition(10, 20);//#1TASK return value
+
 
             int t = square(10);//#2 TASK
 
