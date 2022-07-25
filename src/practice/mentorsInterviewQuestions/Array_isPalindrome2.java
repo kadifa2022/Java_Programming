@@ -1,8 +1,6 @@
 package practice.mentorsInterviewQuestions;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Locale;
 
 /*
 Question 2 Find Palindrome Strings in given array
@@ -30,7 +28,7 @@ public class Array_isPalindrome {
     }
 
 }*/
-public class Array_isPalindromes{
+public class Array_isPalindrome2{
 
 
      ArrayList<String> getPalindromes(String [] input) {
