@@ -1,4 +1,4 @@
-package practice.mentossInterviewQuestions;
+package practice.mentorsInterviewQuestions;
 
 public class Milliseconds {
 
