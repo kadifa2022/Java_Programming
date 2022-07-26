@@ -5,7 +5,7 @@ public class CamelCasing {
     /*
         Week-12 Break camelCase
         Write a function that will break up camel casing, using a space between words. Examples
-        "camelCasing" => "camelCasing"
+        "camelCasing" => "camel Casing"
         "weLoveProgramming" => "we Love Programming"
         "identifier" => "identifier" "" => ""
        */
