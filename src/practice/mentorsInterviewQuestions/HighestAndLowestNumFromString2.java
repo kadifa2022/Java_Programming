@@ -29,10 +29,7 @@ public class HighestAndLowestNumFromString2 {
             return max + " " + min;
         }
 
-    public static void main(String[] args) {
-       String highAndLow= ("1,2,3,4,5,");
-        System.out.println(highAndLow);
 
     }
-}
+
 
