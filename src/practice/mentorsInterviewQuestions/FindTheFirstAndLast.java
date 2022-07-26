@@ -39,4 +39,19 @@ public class FindTheFirstAndLast {
         return str [0]+"\n"+str[a-1];
     }
 
+    static String finedFirstAndLast3(String s, int k){
+        String smallest =s.substring(0, k);
+        String largest="";
+
+        for (int i = 0; i < s.length()-k+1; i++) {
+            String str = s.substring(i, i +k);
+            if (str.compareTo(smallest)<0)smallest=str;
+            if(str.compareTo(largest)>0)largest=str;
+
+            
+        }
+        return smallest+ "\n" +largest;
+
+    }
+
 }
