@@ -3,6 +3,12 @@ package practice.mentorsInterviewQuestions;
 import java.util.TreeSet;
 
 public class TreeSet_FindFirsAndLast {
+    /*
+    Write a function (getSmallestAndLargest) that finds the lexicographically smallest and
+    largest substrings of length k:
+
+
+     */
 
     static String findFirsAndLast(String s, int k){
         int a = s.length()-k +1;
