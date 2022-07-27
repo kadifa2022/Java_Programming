@@ -1,6 +1,6 @@
 package practice.numberTask;
 
-public class DivideWithOutDivision {
+public class Number_DivideWithOutDivision {
     /*
 Write a method that can divide two numbers without using
 division operator

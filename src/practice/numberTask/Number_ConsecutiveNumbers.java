@@ -1,6 +1,6 @@
 package practice.numberTask;
 
-public class ConsecutiveNumbers {
+public class Number_ConsecutiveNumbers {
 
     /*
     Write a function:
