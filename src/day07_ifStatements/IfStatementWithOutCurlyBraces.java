@@ -1,6 +1,6 @@
 package day07_ifStatements;
 
-public class IfStatementWithOutCurlyBraces {//curly braces is not good practice
+public class IfStatementWithOutCurlyBraces {//curly braces is not good practice1
 
     public static void main(String[] args) {
 
