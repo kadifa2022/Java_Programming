@@ -1,4 +1,4 @@
-package practice.mentorsInterviewQuestions;
+package day_InterviewQuestions.mentorsInterviewQuestions;
 
 import org.w3c.dom.ls.LSOutput;
 

@@ -1,4 +1,4 @@
-package practice.mentorsInterviewQuestions;
+package day_InterviewQuestions.mentorsInterviewQuestions;
 
 public class getFirstNonRepeatingVowel {
     public static int getFirstNonRepeatingVowel(String input) {

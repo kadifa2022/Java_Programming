@@ -1,4 +1,4 @@
-package practice.mentorsInterviewQuestions;
+package day_InterviewQuestions.mentorsInterviewQuestions;
 
 public class CasingString {
     /*
