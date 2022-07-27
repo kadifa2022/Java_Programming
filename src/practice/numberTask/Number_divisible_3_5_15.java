@@ -1,5 +1,7 @@
 package practice.numberTask;
 
+import jdk.swing.interop.SwingInterOpUtils;
+
 public class Number_divisible_3_5_15 {
 
 /* Write aprogram that can print the numbers between 1 ~ N that can be divisible by 3, 5, and 15. if the number can be divisible by 3, 5 and 15,
@@ -46,7 +48,7 @@ public class Number_divisible_3_5_15 {
     public static void main(String[] args) {
 
         int [] n = {20,30,49,58,30,20};
-
+        System.out.println();
 
 
 
