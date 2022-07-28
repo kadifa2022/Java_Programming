@@ -74,7 +74,8 @@ public class ArrayListMethods2 {
         System.out.println("-----------------------------------");
         //retainAll()collectionType-removes all un_matching values from the ArrayList(keeps the matching values only)
 
-
+        numbers.retainAll(Arrays.asList(20,30,40,70));
+        System.out.println(numbers);
 
 
 
