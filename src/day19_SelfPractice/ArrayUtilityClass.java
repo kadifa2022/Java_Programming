@@ -49,7 +49,7 @@ public class ArrayUtilityClass {
         //copyOfRange(array, begIndex,endIndex);//copies specific index elements of array
 
         char [] elements={'A', 'B','C','D','E','F'};
-
+               //index     0    1   2   3   4   5
         char [ ] someElements=Arrays.copyOfRange(elements, 1,4+1);
 
         System.out.println(Arrays.toString(someElements));
