@@ -1,0 +1,9 @@
+package java_acommerce_project;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StaticConstants {
+
+    public static final List<Customer>CUSTOMER_LIST=new ArrayList<>();
+}

@@ -1,38 +1,41 @@
 package java_acommerce_project;
 
 public class Address {//encaptulation hide
+    private String streetNumber, streetName, additionalAddressLine, city,state, zipCode;
 
-    private String streetNumber;
-    private String streetName;
-    private String additionalAddress;
-    private String zipCode;
-    private String state;
-
-    public Address(String streetNumber, String streetName, String additionalAddress, String zipCode, String state) {
+    public Address(String streetNumber, String streetName, String additionalAddressLine, String city, String state, String zipCode) {
         this.streetNumber = streetNumber;
         this.streetName = streetName;
-        this.additionalAddress = additionalAddress;
-        this.zipCode = zipCode;
+        this.additionalAddressLine = additionalAddressLine;
+        this.city = city;
         this.state = state;
-    }
-
-    public void setStreetNumber(String streetNumber) {
-        this.streetNumber = streetNumber;
-    }
-
-    public void setStreetName(String streetName) {
-        this.streetName = streetName;
-    }
-
-    public void setAdditionalAddress(String additionalAddress) {
-        this.additionalAddress = additionalAddress;
-    }
-
-    public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
     }
 
-    public void setState(String state) {
-        this.state = state;
+    public String getStreetNumber() {
+        return streetNumber;
+    }
+
+    public String getStreetName() {
+        return streetName;
+    }
+
+    public String getAdditionalAddressLine() {
+        return additionalAddressLine;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public String getZipCode() {
+        return zipCode;
     }
 }
+
+
+
