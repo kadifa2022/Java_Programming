@@ -10,11 +10,15 @@ public class Animal {//for all animal common features-attributes
     public String color;
 
     public Animal(String name, String breed, char gender, int age, String size, String color) {
+   this.name=name;
+   this.breed=breed;
+   this.gender=gender;
+   this.age= age;
+   this.size=size;
+   this.color=color;
     }
 
-    public Animal() {
 
-    }
 
 
     //methods /instance
