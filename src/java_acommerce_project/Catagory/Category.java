@@ -6,16 +6,16 @@ import java.util.UUID;
 
 public abstract class Category {//abstract class to abstract methods
 
-    private UUID id;
+    private UUID Id;
     private String name;
 
-    public Category(UUID iD, String name) {
-        this.id = iD;
+    public Category(UUID id, String name) {
+        this.Id = id;
         this.name = name;
     }
 
     public UUID getId() {
-        return id;
+        return Id;
     }
 
     public String getName() {
@@ -25,7 +25,7 @@ public abstract class Category {//abstract class to abstract methods
     public abstract LocalDateTime finedDeliveryDueDate();
 
     public String generateCategoryCode(){
-        return id.toString().substring(0,8).concat("-").concat(name.substring(0,2));
+        return Id.toString().substring(0,8).concat("-").concat(name.substring(0,2));
     }
 
 

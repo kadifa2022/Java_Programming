@@ -19,7 +19,7 @@ public class Product {
         this.categoryId = categoryId;
     }
 
-    public UUID getiD() {
+    public UUID getId() {
         return id;
     }
 

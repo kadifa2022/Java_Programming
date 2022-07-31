@@ -40,7 +40,9 @@ public class DateGenerator {
 
         }
         public static void createProduct(){
-        Product product1 = new Product( UUID.randomUUID(),"PS5",230.72, 7, 7 , StaticConstants.CATEGORY_LIST.get(0).getId());
+        Product product1 = new Product(UUID.randomUUID(),"PS5",230.72, 7, 7 , StaticConstants.CATEGORY_LIST.get(0).getId());
+        Product product2 = new Product(UUID.randomUUID(),"Glasses", 450.99,30, 25,StaticConstants.CATEGORY_LIST.get(0).getId());
+      //  Product product3 = new Product(UUID.randomUUID(), "TV", 999.99, 20, 19,StaticConstants.CATEGORY_LIST.get(0),getId());
 
 
 
