@@ -30,4 +30,4 @@ Create menu items
 
    Electronic: id, name, calculate delivery time(plus 4 days) create category code-unique code   //abstract class with abstract method and subclass for each category
    Furniture: id, name , calculate delivery time(plus 1 day)create category code(same)           //interface can have default and static methode
-   Skin care: id, name , calculate delivery time(now)create category code(same)
+   Skin care: id, name , calculate delivery time(now)create category code(same)         //CREATE CLASS PRODUCT
