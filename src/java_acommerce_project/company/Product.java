@@ -1,6 +1,6 @@
 package java_acommerce_project.company;
 
-import com.company.category.Category;
+
 import java_acommerce_project.company.checkout.Catagory.Category;
 
 import java.time.LocalDateTime;
