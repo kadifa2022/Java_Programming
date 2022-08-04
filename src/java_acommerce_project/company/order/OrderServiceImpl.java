@@ -1,11 +1,7 @@
 package java_acommerce_project.company.order;
 
 
-import com.company.Cart;
-        import com.company.checkout.CheckoutService;
-        import com.company.checkout.CustomerBalanceCheckoutServiceImpl;
-        import com.company.checkout.MixPaymentCheckoutServiceImpl;
-        import com.company.discount.Discount;
+
 import java_acommerce_project.company.Cart;
 import java_acommerce_project.company.Discount.Discount;
 import java_acommerce_project.company.CheckoutService;
@@ -16,8 +12,9 @@ import java.time.LocalDateTime;
         import java.util.Scanner;
         import java.util.UUID;
 
-        import static com.company.StaticConstants.DISCOUNT_LIST;
-        import static com.company.StaticConstants.ORDER_LIST;
+import static java_acommerce_project.company.StaticConstants.DISCOUNT_LIST;
+import static java_acommerce_project.company.StaticConstants.ORDER_LIST;
+
 
 public class OrderServiceImpl implements OrderService{
     @Override

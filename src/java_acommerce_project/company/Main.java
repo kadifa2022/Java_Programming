@@ -1,13 +1,6 @@
 package java_acommerce_project.company;
 
-import com.company.balance.Balance;
-import com.company.balance.CustomerBalance;
-import com.company.balance.GiftCardBalance;
-import com.company.category.Category;
-import com.company.discount.Discount;
-import com.company.order.Order;
-import com.company.order.OrderService;
-import com.company.order.OrderServiceImpl;
+;
 import java_acommerce_project.company.checkout.Catagory.Category;
 import java_acommerce_project.company.Discount.Discount;
 import java_acommerce_project.company.balance.Balance;
@@ -22,8 +15,9 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.UUID;
 
-import static com.company.StaticConstants.DISCOUNT_LIST;
-import static com.company.StaticConstants.ORDER_LIST;
+import static java_acommerce_project.company.StaticConstants.DISCOUNT_LIST;
+import static java_acommerce_project.company.StaticConstants.ORDER_LIST;
+
 
 public class Main {
 
@@ -73,7 +67,7 @@ public class Main {
                     }
                     break;
                 case 2: //list discounts
-                    for(Discount discount : StaticConstants.DISCOUNT_LIST){
+                    for(Discount discount : DISCOUNT_LIST){
                         System.out.println("Discount Name: " + discount.getName() + "discount threshold amount: " + discount.getThresholdAmount());
                     }
                     break;

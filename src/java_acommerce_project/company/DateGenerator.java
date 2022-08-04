@@ -19,9 +19,9 @@ import java.util.UUID;
 public class DateGenerator {
     public static void createCostumer() {
 
-        Address address1Customer1 = new Address("7925", "Jones Branch Dr", "Suite 3300", "Saint Louis", "VA", "63125");
-        Address address2Customer1 = new Address("825", "GeorgeTown Pky", "Suite 5355", "New York", "VA", "22036");
-        Address address1Customer2 = new Address("5924", "Lee Hwy", "House", "Cikago", "VA", "22036");
+        Address address1Customer1 = new Address("7925", "Jones Branch Dr", "Suite 3300", "63125", "VA");
+        Address address2Customer1 = new Address("825", "GeorgeTown Pky", "Suite 5355", "22036", "VA");
+        Address address1Customer2 = new Address("5924", "Lee Hwy", "House", "22036", "VA");
 
         List<Address> customer1AddressList = new ArrayList<>();
         customer1AddressList.add(address1Customer1);
@@ -47,7 +47,7 @@ public class DateGenerator {
         public static void createProduct(){
         Product product1 = new Product(UUID.randomUUID(),"PS5",230.72, 7, 7 , StaticConstants.CATEGORY_LIST.get(0).getId());
         Product product2 = new Product(UUID.randomUUID(),"Glasses", 450.99,30, 25,StaticConstants.CATEGORY_LIST.get(0).getId());
-        Product product3 = new Product(UUID.randomUUID(), "Char", 30.87, 85, 85,StaticConstants.CATEGORY_LIST.get(1),getId());
+        Product product3 = new Product(UUID.randomUUID(), "Char", 30.87, 85, 85,StaticConstants.CATEGORY_LIST.get(1).getId());
         Product product4 = new Product(UUID.randomUUID(),"Milk",2.87,185,85,UUID.randomUUID());
 
         StaticConstants.PRODUCT_LIST.add(product1);
@@ -57,9 +57,10 @@ public class DateGenerator {
 
     }
     public static void createBalance(){
-        Balance CustomerBalance = new CustomerBalance(StaticConstants.CUSTOMER_LIST.get(0).getId(),450.00);
+        Balance customerBalance= new CustomerBalance(StaticConstants.CUSTOMER_LIST.get(0).getId(),450.00);
         Balance giftCardBalance = new GiftCardBalance(StaticConstants.CUSTOMER_LIST.get(1).getId(),500.00);
 
+        Balance customerBalance;
         StaticConstants.CUSTOMER_BALANCE_LIST.add(customerBalance);
         StaticConstants.GIFT_CARD_BALANCE_LIST.add(giftCardBalance);
     }

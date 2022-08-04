@@ -2,21 +2,21 @@ package java_acommerce_project.company;
 
 
 
-import com.company.Customer;
-        import com.company.StaticConstants;
-        import com.company.balance.Balance;
-        import com.company.balance.CustomerBalance;
-        import com.company.balance.GiftCardBalance;
+
 import java_acommerce_project.company.balance.Balance;
 import java_acommerce_project.company.balance.CustomerBalance;
 import java_acommerce_project.company.balance.GiftCardBalance;
 
 import java.util.UUID;
 
-        import static com.company.StaticConstants.CUSTOMER_BALANCE_LIST;
-        import static com.company.StaticConstants.GIFT_CARD_BALANCE_LIST;
+
 
 public class MixPaymentCheckoutServiceImpl implements CheckoutService {
+    @Override
+    public boolean checkout(Customer customer, int totalAmount) {
+        return false;
+    }
+
     @Override
     public boolean checkout(Customer customer, Double totalAmount) {
         try {
@@ -49,6 +49,12 @@ public class MixPaymentCheckoutServiceImpl implements CheckoutService {
 
         return false;
     }
+
+    @Override
+    public boolean checkout(Customer customer, double totalAmount) {
+        return false;
+    }
+
     private static GiftCardBalance findGiftCardBalance(UUID customerId){
         for(Balance giftCarBalance : StaticConstants.GIFT_CARD_BALANCE_LIST){
             if(giftCarBalance.getCustomerId().toString().equals(customerId.toString())){

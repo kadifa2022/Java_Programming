@@ -1,15 +1,11 @@
 package java_acommerce_project.company;
 
-import com.company.Customer;
-import com.company.StaticConstants;
-import com.company.balance.Balance;
-import com.company.balance.CustomerBalance;
+
 import java_acommerce_project.company.balance.Balance;
 import java_acommerce_project.company.balance.CustomerBalance;
 
 import java.util.UUID;
 
-import static com.company.StaticConstants.CUSTOMER_BALANCE_LIST;
 
 public class CustomerBalanceCheckoutServiceImpl implements CheckoutService {
     @Override

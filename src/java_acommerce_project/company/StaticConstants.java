@@ -2,10 +2,10 @@ package java_acommerce_project.company;
 
 
 
-import com.company.balance.Balance;
-import com.company.category.Category;
-import com.company.discount.Discount;
-import com.company.order.Order;
+
+
+
+
 import java_acommerce_project.company.checkout.Catagory.Category;
 import java_acommerce_project.company.Discount.Discount;
 import java_acommerce_project.company.balance.Balance;
