@@ -49,3 +49,34 @@ public class SummationOfTwoTimeSeries {
 
     }
 }
+/*
+    A time series is represented as a list of time/value pairs.
+    Write a function that takes two time series and outputs a new time series of the summation of them.
+    Example:
+    int
+    double
+    Input:
+    series A: la, 1.0, (2, 1.5), (3, 2.0)
+    series B: [(2, 1.0), (3, 2.5), (5, 1.0)]
+    Map. Key : int. Value: double
+    output:
+    ah
+    ta
+    ollab
+    Assuming we have 'O' for a time pair that's missing, this is the result:
+    [(1, 1.0), (2, 2.5), (3,4.5), (5, 1.0)]
+    same key for two maps
+    explanation;
+    from input1 => (1,1.0) (2,1.5)
+    from input2 =>
+    (2, 1.0)
+    summation => (1,1.0)
+    72. 2.5)
+    (3, 2.0)
+    (3, 2.5)
+    (3, 4.5)
+    (5, 1.0)
+    (5, 1.0)
+    1.5+1=2.5
+
+     */
