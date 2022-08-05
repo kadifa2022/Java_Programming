@@ -23,7 +23,7 @@ Create menu items
    -price,
    -remainingStock                                                  //(if is not enough product trow exception)
    -category
-
+    ===========================================
    Create Category:                                                   // create parent class call category
    all categories can have somme common things
    every category can have something unique as well
@@ -40,3 +40,10 @@ Create menu items
    Costumer balance: customerId, balance, increase balance with additional amount + $10
    GiftCardBalance: customerId, balance, increase the balance with additional amount
    + 10 %
+   =============================================
+
+   Discount:                             //if you spend 250$ 50off
+   Amount based Discount: discount id, name, threshold amount, discount amount, need to calculate
+   fina amount after discount
+   Rate Based Discount: discount id, name, discount rate, threshold amount, need to calculate
+   final amount after discount 5%
