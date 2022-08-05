@@ -6,7 +6,7 @@ import lab.projectOzzy.category.Category;
 import java.util.Scanner;
 
 public class main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
 
         DateGenerator.createCostumer();    //1.we need static //we  can call through cass name , you can import and you can call methode directy
         DateGenerator.createCategory();                             //create class Customer (public static void)-
@@ -41,12 +41,19 @@ public class main {
                     }
                     break;
 
-                case 1://list products//product name, product category name
-                   for (Category category: StaticConstants.CATEGORY_LIST){
-
+                case 1:         //list products//product name, product category name
+                   try{
+                       for(Product product : StaticConstants.PRODUCT_LIST){                                       //created methode
+                           System.out.println("Product name:" + product.getName()+ "Product Category Name:" + product.getCategoryName());
+                       }
+                   }catch (Exception e){
+                       System.out.println("Product could not handle, because category not found for product name:"+e.getMessage().split(",")[1]);
                    }
+
                     break;
                 case 2:
+
+
                     break;
                 case 3:
                     break;

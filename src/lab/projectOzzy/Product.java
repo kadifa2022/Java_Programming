@@ -1,5 +1,7 @@
 package lab.projectOzzy;
 
+import lab.projectOzzy.category.Category;
+
 import java.util.UUID;
 
 public class Product {
@@ -42,4 +44,15 @@ public class Product {
     public UUID getCategoryId() {
         return categoryId;
     }
+
+    public String getCategoryName() throws Exception{                      //methode created in loop case 1
+        for (Category category:StaticConstants.CATEGORY_LIST) {               //u have categoryid. please go to date base and check all categories ids
+            if (getCategoryId().toString().equals(category.getId().toString())){
+                return category.getName();                                //and find matching one and return it names corresponding that category id
+            }
+            }
+        throw new Exception("Category not found,"+ getName());            //EXCEPTION MUST HANDLE WHO CALLED
+        }
+
+
 }

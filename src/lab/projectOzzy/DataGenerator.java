@@ -55,11 +55,12 @@ public class DataGenerator {
         Product product1 = new Product(UUID.randomUUID(),"PSP",230.79,7,7,StaticConstants.CATEGORY_LIST.get(0).getId());
         Product product2 = new Product(UUID.randomUUID(),"XBOX",120.00, 15,15,StaticConstants.CATEGORY_LIST.get(0).getId());
         Product product3 = new Product(UUID.randomUUID(),"Chair", 20.00,20,20,StaticConstants.CATEGORY_LIST.get(1).getId());
-
+        Product product4 = new Product(UUID.randomUUID(),"Milk", 2.85,185,85,UUID.randomUUID());  //method created in product class
 
         StaticConstants.PRODUCT_LIST.add(product1);
         StaticConstants.PRODUCT_LIST.add(product2);
         StaticConstants.PRODUCT_LIST.add(product3);
+        StaticConstants.PRODUCT_LIST.add(product4);
 
     }
     public static void createBalance(){//Polymorphism-call New customerBalance
