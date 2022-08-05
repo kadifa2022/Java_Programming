@@ -4,6 +4,8 @@ package lab.projectOzzy;
 
 import lab.projectOzzy.category.Category;
 import lab.projectOzzy.category.Electronic;
+import lab.projectOzzy.category.Furniture;
+import lab.projectOzzy.category.SkinCare;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,13 +33,13 @@ public class DataGenerator {
 
     }
 
-    public static void createCategory(){
+    public static void createCategory(){   //polymorphism check-category is abstract extending class--because is delivery due time
 
         Category category1 = new Electronic(UUID.randomUUID(),"Electronic");//put in dataBase
-        Category category2 = new Electronic(UUID.randomUUID(),"Furniture");
-        Category category3 = new Electronic(UUID.randomUUID(),"SkinCare");
+        Category category2 = new Furniture(UUID.randomUUID(),"Furniture");
+        Category category3 = new SkinCare(UUID.randomUUID(),"SkinCare");
 
-        StaticConstants.CATEGORY_LIST.add(category1);//polymorphism check
+        StaticConstants.CATEGORY_LIST.add(category1);
         StaticConstants.CATEGORY_LIST.add(category2);
         StaticConstants.CATEGORY_LIST.add(category3);
 
@@ -52,6 +54,8 @@ public class DataGenerator {
         StaticConstants.PRODUCT_LIST.add(product1);
         StaticConstants.PRODUCT_LIST.add(product2);
         StaticConstants.PRODUCT_LIST.add(product3);
+
+
     }
 
 
