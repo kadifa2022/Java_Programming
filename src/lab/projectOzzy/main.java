@@ -7,6 +7,9 @@ import lab.projectOzzy.balance.GiftCardBalance;
 import lab.projectOzzy.category.Category;
 import lab.projectOzzy.discount.Discount;
 
+import javax.sound.midi.spi.SoundbankReader;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 import java.util.UUID;
 
@@ -28,6 +31,9 @@ public class main {
         //get the customer (object)           database      get scanner
         Customer customer = StaticConstants.CUSTOMER_LIST.get(scanner.nextInt());
 
+        //case 5 //created empty cart
+        Cart cart = new Cart(customer);
+
         // create while loop to log in to application
 
         while (true) {//infinite loop
@@ -38,48 +44,49 @@ public class main {
                 System.out.println(i + "-"+prepareManuOptions()[i]);
             }
             int menuSelection= scanner.nextInt();
-            switch (menuSelection){
+            switch (menuSelection) {
 
                 case 0: //list category
-                    for(Category category:StaticConstants.CATEGORY_LIST){
-                        System.out.println("Category Code:"+ category.generateCategoryCode()+ "category name:" + category.getName());
+                    for (Category category : StaticConstants.CATEGORY_LIST) {
+                        System.out.println("Category Code:" + category.generateCategoryCode() + "category name:" + category.getName());
                     }
                     break;
 
                 case 1:         //list products//product name, product category name
-                                            //exception handle with try and catch
-                   try{
-                       for(Product product : StaticConstants.PRODUCT_LIST){                                       //created methode
-                           System.out.println("Product name:" + product.getName()+ "Product Category Name:" + product.getCategoryName());
-                       }
-                   }catch (Exception e){                                                      //exception from product //get name is index 1 milk
-                       System.out.println("Product could not handle, because category not found for product name:" + e.getMessage().split(",")[1]);
-                   }
-                   break;
+                    //exception handle with try and catch
+                    try {
+                        for (Product product : StaticConstants.PRODUCT_LIST) {                                       //created methode
+                            System.out.println("Product name:" + product.getName() + "Product Category Name:" + product.getCategoryName());
+                        }
+                    } catch (
+                            Exception e) {                                                      //exception from product //get name is index 1 milk
+                        System.out.println("Product could not handle, because category not found for product name:" + e.getMessage().split(",")[1]);
+                    }
+                    break;
                 case 2://list discount
-                    for(Discount discount: StaticConstants.DISCOUNT_LIST){
-                        System.out.println("Discount name:" + discount.getName() +"discount threshold amount " +discount.getThresholdAmount());
+                    for (Discount discount : StaticConstants.DISCOUNT_LIST) {
+                        System.out.println("Discount name:" + discount.getName() + "discount threshold amount " + discount.getThresholdAmount());
                     }
                     break;
                 case 3:
                     CustomerBalance cBalance = findCustomerBalance(customer.getId());
-                    GiftCardBalance gBalance= findGiftCardBalance(customer.getId());
-                    double totalBalance= cBalance.getBalance() + gBalance.getBalance();
+                    GiftCardBalance gBalance = findGiftCardBalance(customer.getId());
+                    double totalBalance = cBalance.getBalance() + gBalance.getBalance();
                     System.out.println("Total Balance:" + totalBalance);
                     System.out.println("Customer Balance:" + cBalance.getBalance());
                     System.out.println("Gift Card Balance:" + gBalance.getBalance());
                     break;
                 case 4:
-                    CustomerBalance customerBalance=findCustomerBalance(customer.getId());
+                    CustomerBalance customerBalance = findCustomerBalance(customer.getId());
                     GiftCardBalance giftCardBalance = findGiftCardBalance(customer.getId());
                     System.out.println("Which account would you to add?");
                     System.out.println("Type 1 for Customer Balance:" + customerBalance.getBalance());
                     System.out.println("Type 2 for Gift Card Balance: " + giftCardBalance.getBalance());
                     int balanceAccountSelection = scanner.nextInt();
                     System.out.println("How much would you like to add? ");
-                    double additionalAmount=scanner.nextInt();
+                    double additionalAmount = scanner.nextInt();
 
-                    switch (balanceAccountSelection){
+                    switch (balanceAccountSelection) {
                         case 1:
                             customerBalance.addBalance(additionalAmount);
                             System.out.println("New Costumer Balance:" + customerBalance.getBalance());
@@ -90,11 +97,49 @@ public class main {
                             System.out.println("New Gift Card Balance:" + giftCardBalance);
                             break;
                     }
-
-
                     break;
+
                 case 5:
+                    Map<Product, Integer> map = new HashMap<>();
+
+                    cart.setProductMap(map);
+                    while (true) {   //while loop to keep adding more product
+                        System.out.println("Which product you want to add  to your cart. For exit product selection Type: exit");
+                        for (Product product : StaticConstants.PRODUCT_LIST) {
+                            try {
+                                System.out.println("id:" + product.getId() + "price: " + product.getPrice() + "product category" +
+                                        product.getCategoryName() + "stock: " + product.getRemainingStack() +
+                                        "product delivery due:" + product.getDeliveryDueDate());
+                            } catch (Exception e) {
+                                System.out.println(e.getMessage());         // product are not available and we need to use try and catch
+                            }
+                        }
+                        String productId = scanner.next();//picked the product
+
+
+                        try {
+                            Product product= findProductById(productId);//product object has all info. that we needed
+                            if (!putItemTotheCartIfStockAvailabe(cart,product)){//trying to put exception //if is not stack available
+                                System.out.println("Stock is insufficient. Please try again");
+                                continue;
+                            }
+                        } catch (Exception e) {
+                            System.out.println("Product does not exist, please try again");
+                            continue;
+                        }
+                        System.out.println("Do you want to add more product. Type Y for adding more, N for exit");
+                        String decision = scanner.next();
+                        if(!decision.equals("Y")){
+                            break;
+
+
+                        }
+
+
+                    }
                     break;
+
+
                 case 6:
                     break;
 
@@ -112,6 +157,16 @@ public class main {
         }
         
     }
+    private static Product findProductById(String productId) throws Exception{//need to add throws
+        for(Product product :StaticConstants.PRODUCT_LIST){
+            if(product.getId().toString().equals(product)){
+                return product;
+            }
+        }
+        throw new Exception("Product not found");
+    }
+
+
 
         //2. case 3
         private static CustomerBalance findCustomerBalance(UUID customerId){

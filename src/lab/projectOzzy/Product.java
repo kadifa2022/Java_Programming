@@ -2,6 +2,7 @@ package lab.projectOzzy;
 
 import lab.projectOzzy.category.Category;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 public class Product {
@@ -45,13 +46,22 @@ public class Product {
         return categoryId;
     }
 
-    public String getCategoryName() throws Exception{                      //methode created in loop case 1
+    public String getCategoryName() throws Exception{                      //methode created in loop case 1 // case 5:PRODUCT ARE NOT AVAILABLE need to use TRY AND CATCH TO HANDLE
         for (Category category:StaticConstants.CATEGORY_LIST) {               //u have categoryid. please go to date base and check all categories ids
             if (getCategoryId().toString().equals(category.getId().toString())){
                 return category.getName();                                //and find matching one and return it names corresponding that category id
             }
             }       //created object-split index 0, 1
         throw new Exception("Category not found,"+ getName());            //THROW EXCEPTION MUST HANDLE WHO CALLED
+        }
+
+        public LocalDateTime getDeliveryDueDate() throws Exception{
+        for(Category category: StaticConstants.CATEGORY_LIST){
+            if (getCategoryId().toString().equals(category.getId().toString())){
+                return category.findDeliveryDueDate();
+            }
+        }
+        throw new Exception("Category could not fined");
         }
 
 
