@@ -50,8 +50,8 @@ public class Product {
             if (getCategoryId().toString().equals(category.getId().toString())){
                 return category.getName();                                //and find matching one and return it names corresponding that category id
             }
-            }
-        throw new Exception("Category not found,"+ getName());            //EXCEPTION MUST HANDLE WHO CALLED
+            }       //created object-split index 0, 1
+        throw new Exception("Category not found,"+ getName());            //THROW EXCEPTION MUST HANDLE WHO CALLED
         }
 
 

@@ -10,7 +10,7 @@ public class GiftCardBalance extends Balance{
     }
 
     @Override
-    public Double addBalance(Double additionalBalance) {
+    public Double addBalance(Double additionalBalance) {//methode for addBalance
         double promotionBalance=additionalBalance * 10/100;//how to add promotionBalance and then
         setBalance(getBalance() + additionalBalance + promotionBalance);
         return getBalance();

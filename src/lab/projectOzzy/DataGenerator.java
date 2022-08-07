@@ -25,12 +25,12 @@ public class DataGenerator {
         Address address1Costumer2=new Address("5924","Lee dr", "House","24030","VA");
         //create costumer
 
-        List <Address> costumer1AddressList = new ArrayList<>();//list of addresses ArrayList
+        List <Address> costumer1AddressList = new ArrayList<>();  //list of addresses ArrayList
 
-        costumer1AddressList.add(address1Costumer1);//add customers
+        costumer1AddressList.add(address1Costumer1);  //add customers
         costumer1AddressList.add(address2Costumer1);
 
-        Customer customer1=new Customer(UUID.randomUUID(),"OZZY", "ozzy@cydeo.com", costumer1AddressList);//added info to date
+        Customer customer1=new Customer(UUID.randomUUID(),"OZZY", "ozzy@cydeo.com", costumer1AddressList);  //added info to date
         Customer customer2=new Customer(UUID.randomUUID(),"MIKE","mike@gmail.com");
 
         StaticConstants.CUSTOMER_LIST.add(customer1);
@@ -63,7 +63,7 @@ public class DataGenerator {
         StaticConstants.PRODUCT_LIST.add(product4);
 
     }
-    public static void createBalance(){//Polymorphism-call New customerBalance
+    public static void createBalance(){      //Polymorphism-call New customerBalance
 
                                                     //for customerId?-get to customer date base and chose customers(not random customer)
         Balance customerBalance= new CustomerBalance(StaticConstants.CUSTOMER_LIST.get(0).getId(), 450.00);
@@ -73,7 +73,7 @@ public class DataGenerator {
         StaticConstants.GIFT_CARD_BALANCE_LIST.add(giftCardBalance);
 
     }
-    public static void createDiscount(){//Polymorphism
+    public static void createDiscount(){   //Polymorphism
 
         Discount amountBasedDiscount= new AmountBasedDiscount(UUID.randomUUID(),"Buy 250 Free 50",250.00,50.00);
         Discount rateBasedDiscount=new RateBasedDiscount(UUID.randomUUID(),"Buy 500 get Free %15",500.00,15.00);

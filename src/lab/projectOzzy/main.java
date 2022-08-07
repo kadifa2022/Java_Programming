@@ -1,12 +1,17 @@
 package lab.projectOzzy;
 
 import java_acommerce_project.company.DateGenerator;
+import lab.projectOzzy.balance.Balance;
+import lab.projectOzzy.balance.CustomerBalance;
+import lab.projectOzzy.balance.GiftCardBalance;
 import lab.projectOzzy.category.Category;
+import lab.projectOzzy.discount.Discount;
 
 import java.util.Scanner;
+import java.util.UUID;
 
 public class main {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) {
 
         DateGenerator.createCostumer();    //1.we need static //we  can call through cass name , you can import and you can call methode directy
         DateGenerator.createCategory();                             //create class Customer (public static void)-
@@ -42,22 +47,51 @@ public class main {
                     break;
 
                 case 1:         //list products//product name, product category name
+                                            //exception handle with try and catch
                    try{
                        for(Product product : StaticConstants.PRODUCT_LIST){                                       //created methode
                            System.out.println("Product name:" + product.getName()+ "Product Category Name:" + product.getCategoryName());
                        }
-                   }catch (Exception e){
-                       System.out.println("Product could not handle, because category not found for product name:"+e.getMessage().split(",")[1]);
+                   }catch (Exception e){                                                      //exception from product //get name is index 1 milk
+                       System.out.println("Product could not handle, because category not found for product name:" + e.getMessage().split(",")[1]);
                    }
-
-                    break;
-                case 2:
-
-
+                   break;
+                case 2://list discount
+                    for(Discount discount: StaticConstants.DISCOUNT_LIST){
+                        System.out.println("Discount name:" + discount.getName() +"discount threshold amount " +discount.getThresholdAmount());
+                    }
                     break;
                 case 3:
+                    CustomerBalance cBalance = findCustomerBalance(customer.getId());
+                    GiftCardBalance gBalance= findGiftCardBalance(customer.getId());
+                    double totalBalance= cBalance.getBalance() + gBalance.getBalance();
+                    System.out.println("Total Balance:" + totalBalance);
+                    System.out.println("Customer Balance:" + cBalance.getBalance());
+                    System.out.println("Gift Card Balance:" + gBalance.getBalance());
                     break;
                 case 4:
+                    CustomerBalance customerBalance=findCustomerBalance(customer.getId());
+                    GiftCardBalance giftCardBalance = findGiftCardBalance(customer.getId());
+                    System.out.println("Which account would you to add?");
+                    System.out.println("Type 1 for Customer Balance:" + customerBalance.getBalance());
+                    System.out.println("Type 2 for Gift Card Balance: " + giftCardBalance.getBalance());
+                    int balanceAccountSelection = scanner.nextInt();
+                    System.out.println("How much would you like to add? ");
+                    double additionalAmount=scanner.nextInt();
+
+                    switch (balanceAccountSelection){
+                        case 1:
+                            customerBalance.addBalance(additionalAmount);
+                            System.out.println("New Costumer Balance:" + customerBalance.getBalance());
+                            break;
+
+                        case 2:
+                            giftCardBalance.addBalance(additionalAmount);
+                            System.out.println("New Gift Card Balance:" + giftCardBalance);
+                            break;
+                    }
+
+
                     break;
                 case 5:
                     break;
@@ -79,11 +113,34 @@ public class main {
         
     }
 
+        //2. case 3
+        private static CustomerBalance findCustomerBalance(UUID customerId){
+            for (Balance customerBalance:StaticConstants.CUSTOMER_BALANCE_LIST) {
+                if(customerBalance.getCustomerId().toString().equals(customerId.toString())){
+                    return (CustomerBalance) customerBalance;//Cast because of the Balance (
+                }
+            }//created new object and added to data
+            CustomerBalance customerBalance = new CustomerBalance(customerId,0d);//if something don't exist assign 0
+            StaticConstants.CUSTOMER_BALANCE_LIST.add(customerBalance);
+
+            return customerBalance;
+        }
+
+    private static GiftCardBalance findGiftCardBalance(UUID customerId){
+        for (Balance giftCardBalance:StaticConstants.GIFT_CARD_BALANCE_LIST) {
+            if(giftCardBalance.getCustomerId().toString().equals(customerId.toString())){
+                return (GiftCardBalance)  giftCardBalance;//Cast because of the Balance (
+            }
+        }//created new object and added to data
+        GiftCardBalance giftCardBalance = new GiftCardBalance(customerId,0d);//if something don't exist assign 0
+        StaticConstants.GIFT_CARD_BALANCE_LIST.add(giftCardBalance);
+
+        return giftCardBalance;
+    }
 
 
 
-
-
+        //1
     //static can not call something not static
     // private-access modifier
     private static String[] prepareManuOptions(){
