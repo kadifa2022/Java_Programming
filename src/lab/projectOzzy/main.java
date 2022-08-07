@@ -104,8 +104,7 @@ public class main {
 
                 case 5:
                     Map<Product, Integer> map = new HashMap<>();
-
-                    cart.setProductMap(map);
+                    cart.setProductMap(map);//empty cart which is map integer for quantity
                     while (true) {   //while loop to keep adding more product
                         System.out.println("Which product you want to add  to your cart. For exit product selection Type: exit");
                         for (Product product : StaticConstants.PRODUCT_LIST) {
@@ -114,20 +113,19 @@ public class main {
                                         product.getCategoryName() + "stock: " + product.getRemainingStack() +
                                         "product delivery due:" + product.getDeliveryDueDate());
                             } catch (Exception e) {
-                                System.out.println(e.getMessage());         // product are not available and we need to use try and catch
+                                System.out.println(e.getMessage());         //if product are not available and we need to use try and catch
                             }
                         }
-                        String productId = scanner.next();//picked the product
-
+                        String productId = scanner.next();//user is chosing Id -picked the product
 
                         try {
-                            Product product= findProductById(productId);//product object has all info. that we needed
-                            if (!putItemToCartIfStockAvailable(cart,product)){//trying to put exception //if is not stack available
+                            Product product= findProductById(productId);//product object -has all info. that we need
+                            if (!putItemToCartIfStockAvailable(cart,product)){// checking first for available product-trying to put exception //if is not stack available
                                 System.out.println("Stock is insufficient. Please try again");
                                 continue;
                             }
                         } catch (Exception e) {
-                            System.out.println("Product does not exist, please try again");
+                            System.out.println("Product does not exist, please try again");//
                             continue;
                         }
                         System.out.println("Do you want to add more product. Type Y for adding more, N for exit");
@@ -160,8 +158,8 @@ public class main {
         }
         
     }
-
-   public static boolean putItemToCartIfStockAvailable(Cart cart, Product product){
+    //case:5
+   public static boolean putItemToCartIfStockAvailable(Cart cart, Product product){    //creating method to checked condition(how many remaining quantity) true or false
        System.out.println("Please provide product count");
        Scanner scanner = new Scanner(System.in);
        int count= scanner.nextInt();
@@ -169,7 +167,7 @@ public class main {
        //how many existing product in your cart?//retrieve the value for cart product
        Integer cartCount= cart.getProductMap().get(product);
 
-       if (cartCount != null && product.getRemainingStack() > cartCount + count ){
+       if (cartCount != null && product.getRemainingStack() > cartCount + count ){//cart is not equal=0
            cart.getProductMap().put(product, cartCount + count);
                return true;
            }else if(product.getRemainingStack()> count){
