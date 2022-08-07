@@ -7,11 +7,14 @@ import lab.projectOzzy.balance.GiftCardBalance;
 import lab.projectOzzy.category.Category;
 import lab.projectOzzy.discount.Discount;
 
-import javax.sound.midi.spi.SoundbankReader;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.UUID;
+
+
+
 
 public class main {
     public static void main(String[] args) {
@@ -119,7 +122,7 @@ public class main {
 
                         try {
                             Product product= findProductById(productId);//product object has all info. that we needed
-                            if (!putItemTotheCartIfStockAvailabe(cart,product)){//trying to put exception //if is not stack available
+                            if (!putItemToCartIfStockAvailable(cart,product)){//trying to put exception //if is not stack available
                                 System.out.println("Stock is insufficient. Please try again");
                                 continue;
                             }
@@ -157,6 +160,26 @@ public class main {
         }
         
     }
+
+   public static boolean putItemToCartIfStockAvailable(Cart cart, Product product){
+       System.out.println("Please provide product count");
+       Scanner scanner = new Scanner(System.in);
+       int count= scanner.nextInt();
+
+       //how many existing product in your cart?//retrieve the value for cart product
+       Integer cartCount= cart.getProductMap().get(product);
+
+       if (cartCount != null && product.getRemainingStack() > cartCount + count ){
+           cart.getProductMap().put(product, cartCount + count);
+               return true;
+           }else if(product.getRemainingStack()> count){
+           cart.getProductMap().put(product, count);
+               return true;
+           }
+
+       return false;
+    }
+
     private static Product findProductById(String productId) throws Exception{//need to add throws
         for(Product product :StaticConstants.PRODUCT_LIST){
             if(product.getId().toString().equals(product)){
