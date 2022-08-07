@@ -11,7 +11,7 @@ public class CustomerBalance extends Balance{//WE need to call parent constructo
 
     @Override
     public Double addBalance(Double additionalBalance) {//after using setter in Balance (parent clas) than set the return
-        setBalance(getBalance()+additionalBalance);//set the balance first and add additional balance
+        setBalance(getBalance() + additionalBalance);//set the balance first and add additional balance
         return getBalance();
     }
 }

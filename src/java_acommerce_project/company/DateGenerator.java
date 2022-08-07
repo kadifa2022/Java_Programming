@@ -2,6 +2,7 @@ package java_acommerce_project.company;
 
 
 
+import java_acommerce_project.company.balance.CustomerBalance;
 import java_acommerce_project.company.checkout.Catagory.Category;
 import java_acommerce_project.company.checkout.Catagory.Electronic;
 import java_acommerce_project.company.checkout.Catagory.Furniture;
@@ -60,7 +61,7 @@ public class DateGenerator {
         Balance customerBalance= new CustomerBalance(StaticConstants.CUSTOMER_LIST.get(0).getId(),450.00);
         Balance giftCardBalance = new GiftCardBalance(StaticConstants.CUSTOMER_LIST.get(1).getId(),500.00);
 
-        Balance customerBalance;
+
         StaticConstants.CUSTOMER_BALANCE_LIST.add(customerBalance);
         StaticConstants.GIFT_CARD_BALANCE_LIST.add(giftCardBalance);
     }
