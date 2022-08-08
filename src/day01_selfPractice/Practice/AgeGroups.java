@@ -49,6 +49,7 @@ public class AgeGroups {
                 if ( age >= 86 && age <= 120){
                     result = "senior";
                 }
+        System.out.println(result);
                 }
             }
 
