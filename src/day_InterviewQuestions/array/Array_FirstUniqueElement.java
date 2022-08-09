@@ -10,7 +10,7 @@ public class Array_FirstUniqueElement {
     public static int firstDuplicatedElement(int [] array) {
         int firstDuplicated = 0;
 
-        for (int each:array) {
+        for (int each:array) { //forEach loop
             int frequency = 0;
             for (int each2:array) {
                 if (each ==each2)
