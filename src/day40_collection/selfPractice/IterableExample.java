@@ -1,9 +1,6 @@
 package day40_collection.selfPractice;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class IterableExample {
 
@@ -25,7 +22,7 @@ public class IterableExample {
 
         for (int i = 0; i < list.size(); i++) {
             if(list.get(i)<5);
-            list.remove(i);
+            list.remove(i);//remove method from collection is not preferred
             
         }
         System.out.println(list);
@@ -39,18 +36,49 @@ public class IterableExample {
              //assign back to Iterator to get every single element
         Iterator<Integer> it = list2.iterator();
 
-        while (it.hasNext()){  //call hasNext()
+        while (it.hasNext()){  //call hasNext() - if the condition true
             Integer each =it.next(); //how to get each element
             if(each<5){
-                it.remove();
+                it.remove();// remove() method iterable we have to use for remove elements from collection
             }
 
         }
         System.out.println(list2);
 
+        System.out.println("-----------------------------------------");
 
-        
-            
+            //iterator with For loop
+        List<Integer> list3= new ArrayList<>();
+        list3.addAll(Arrays.asList(1,1,2,3,4,5,5,6,7,8,9,1,2,2,3,3,3));
+
+        for(Iterator<Integer> i = list3.iterator(); i.hasNext();){
+
+           Integer each =i.next();
+
+           if(each < 5){
+               i.remove();
+           }
+        }
+
+        System.out.println(list3);
+
+        System.out.println("---------------------------------------------------");
+
+        List<Integer>list4= new ArrayList<>();
+        list4.addAll(Arrays.asList(1,2,3,4,5,6,7,8,8,9,9,1,2,2,3,4,4,5));
+
+        list4.removeIf(each->each<5);//removeIf() --to remove objects from collection any class
+
+        System.out.println(list4);
+
+        System.out.println("------------------------------------------------------");
+
+        List<Integer>list5= new LinkedList<>();
+        list5.addAll(Arrays.asList(1,2,3,4,5,6,7,8,1,3,3,5,5,6,7,8,8,9));
+        //for landa expression is preferred to use only one letter-p
+        list5.removeIf(p -> p < 5);
+
+        System.out.println(list5);
         }
 
 
