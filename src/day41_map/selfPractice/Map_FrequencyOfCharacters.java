@@ -15,7 +15,7 @@ public class Map_FrequencyOfCharacters {
             if(map.containsKey(each)){
                 map.put(each, map.get(each)+1);
             }else{
-                map.put(each,1);
+               map.put(each,1);
             }
         }
     }
