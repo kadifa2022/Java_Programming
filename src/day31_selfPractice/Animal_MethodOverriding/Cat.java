@@ -7,17 +7,17 @@ public class Cat extends Animal{
         super(name, breed, gender, age, size, color);
     }
     public void eat(){
-        System.out.println("Cat" +getName() + "is eating cat food");
+        System.out.println("Cat " +getName() + " is eating cat food");
 
     }
 
 
     public void sleep() {
-        System.out.println("Cat" + getName() + "sleeps 12 hours in a day");
+        System.out.println("Cat " + getName() + " sleeps 12 hours in a day");
     }
 
     public void scratch(){//uniq method of the cat class
-        System.out.println("Cat"  + getName()+ "is scratching");
+        System.out.println("Cat "  + getName() + " is scratching");
     }
 }
 

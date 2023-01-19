@@ -9,16 +9,16 @@ public class Dog extends Animal{
 
 
     public void sleep() {
-        System.out.println("Dog" + getName()+ "sleeps 10 hours a day");
+        System.out.println("Dog " + getName()+ " sleeps 10 hours a day");
     }
 
 
     public void drink() {
-        System.out.println("Dog" + getName()+ "is drinking water");
+        System.out.println("Dog " + getName()+ " is drinking water");
     }
 
     public void eat(){
-        System.out.println("Cat" + getName()+ "is eating cat food");
+        System.out.println("Dog " + getName()+ " is eating dog food");
     }
     public void bark(){
         System.out.println("Dog " +getName()+ "is barking");
