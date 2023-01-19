@@ -19,11 +19,11 @@ public class Lion extends Animal{
     }
 
     public void eat(){
-        System.out.println("Lion" + getName() + "is eating deer");
+        System.out.println("Lion " + getName() + " is eating deer");
     }
 
     public void roar(){
-        System.out.println("Lion" +getName()+ " is roaring ");
+        System.out.println("Lion " +getName()+ " is roaring ");
     }
 
     @Override
