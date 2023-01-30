@@ -63,7 +63,7 @@ public class CollectionPractice {
 
         //    System.out.println(listOfArrays);
 
-        listOfArrays.get(0)[2] = 35;
+        listOfArrays.get(0)[2] = 35; //update the element index 2
         System.out.println(  Arrays.toString( listOfArrays.get(0) ) );
 
         System.out.println("--------------------------------------------");
