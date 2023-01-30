@@ -25,7 +25,7 @@ public class ArrayPractice {
 
         System.out.println(Arrays.toString(arrayOfLists));
 
-        arrayOfLists[0].set(4, 50);
+        arrayOfLists[0].set(4, 50); //update
 
         System.out.println(Arrays.toString(arrayOfLists));
 
