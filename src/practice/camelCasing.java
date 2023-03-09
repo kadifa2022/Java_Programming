@@ -5,7 +5,7 @@ public class camelCasing {
 
 
 
-        public static String camelCase (String str) {  //
+        public static String camelCase(String str) {  //
 
             String result = "";
 
