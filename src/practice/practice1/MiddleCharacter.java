@@ -8,6 +8,7 @@ public class MiddleCharacter {
         Scanner scan = new Scanner(System.in);
         String word = scan.next();
 
+
         if (word.length() %2 !=0 ){
             if (word.length() >=3){
                 System.out.println(word.charAt(word.length()/2));
@@ -23,4 +24,5 @@ public class MiddleCharacter {
         }
 
     }
+
 }
