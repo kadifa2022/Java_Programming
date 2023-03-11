@@ -6,7 +6,7 @@ public class Array_FindTheMaximum {
      */
 
     public static int maxValue(int[] n) {
-        int max = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
         for (int each: n) {
             if (each > max){
                 max = each;

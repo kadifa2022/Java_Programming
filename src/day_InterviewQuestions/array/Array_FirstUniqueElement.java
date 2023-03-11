@@ -1,6 +1,12 @@
 package day_InterviewQuestions.array;
 
+import day21_selfPractice.Arrays;
+
 public class Array_FirstUniqueElement {
+    public static void main(String[] args) {
+        int[] array = {10, 10, 12, 4, 5,};
+        System.out.println(firstDuplicatedElement(array));
+    }
 
 
 
