@@ -18,7 +18,8 @@ public class StringMethods {
         String sentence = "Today is a great day";
         String[] arr = ArraysUtility.reverse( sentence.split(" ") ); //[Java, love I] System.out.println(Arrays.toString(arr));
         String reversedSentence = ""; //"Java love I"
-        for (int i = 0; i < arr.length; i++) { reversedSentence += arr[i] +" ";
+        for (int i = 0; i < arr.length; i++)
+        { reversedSentence += arr[i] +" ";
         }
         System.out.println(reversedSentence);
     } }

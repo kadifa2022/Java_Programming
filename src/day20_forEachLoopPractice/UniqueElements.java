@@ -14,7 +14,7 @@ public class UniqueElements {
                 }
             }
             if (count == 1) {
-                result += each + " ;";
+                result += each + " ";
             }
         }
 
