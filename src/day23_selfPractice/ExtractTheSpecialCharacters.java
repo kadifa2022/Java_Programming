@@ -21,7 +21,7 @@ public class ExtractTheSpecialCharacters {
                         ch.add(""+str.charAt(i));
                     }
         }
-                System.out.println("list1=" + letter +"list2=" + num + "list3=" +ch);
+                System.out.println("list1=" + letter + "list2=" + num + "list3=" + ch);
 
 
 
