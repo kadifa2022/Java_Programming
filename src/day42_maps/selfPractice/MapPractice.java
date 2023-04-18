@@ -39,8 +39,8 @@ public class MapPractice {
 
          */ //not best solution
 
-        for(String eacValue:employeeMap.values()){//better solution
-            if(eacValue.equals("F")){
+        for(String eachValue:employeeMap.values()){//better solution
+            if(eachValue.equals("F")){
                 countFemaleEmployee++;
             }else{
                 countMaleEmployee++;

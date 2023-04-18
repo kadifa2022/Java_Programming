@@ -1,13 +1,14 @@
 package day_InterviewQuestions.mentorsInterviewQuestions;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class HashMap {
+public class HashMap_GetPairs {
 
     static Map<String, Integer> getPairs(List<String> animals){
         
-        Map<String, Integer> pairs = new java.util.HashMap<>();
+        Map<String, Integer> pairs = new HashMap<>();
         for (String animal: animals) {
             int num = pairs.getOrDefault(animal,0);
             if(num<2){
