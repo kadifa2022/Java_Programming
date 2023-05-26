@@ -50,7 +50,6 @@ public class StringUtility {
             if (!result.contains("" + each)) {
                 result += each;
             }
-
         }
 
         return result;
